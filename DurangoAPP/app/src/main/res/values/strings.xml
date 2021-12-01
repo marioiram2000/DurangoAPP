@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">DurangoAPP</string>
+    <string name="app_name">DIDAKTIK APP Durango</string>
+    <string name="talde_berria">Talde berria</string>
+    <string name="jarraitu">Jarraitu</string>
+    <string name="sartu_taldearen_izena">Sartu taldearen izena:</string>
+    <string name="taldea">Taldea</string>
+    <string name="hasi">HASI</string>
+    <string name="new_group_error">Sartu taldearen izena</string>
+    <string name="aukeratu_zure_taldea">Aukeratu zure taldea:</string>
 </resources>
