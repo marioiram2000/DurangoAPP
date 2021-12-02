@@ -5,6 +5,10 @@
     <string name="sartu_taldearen_izena">Sartu taldearen izena:</string>
     <string name="taldea">Taldea</string>
     <string name="hasi">HASI</string>
+    <string name="giltzaren_bila">"GILTZAREN BILA!"</string>
     <string name="new_group_error">Sartu taldearen izena</string>
     <string name="aukeratu_zure_taldea">Aukeratu zure taldea:</string>
+    <string name="zona0_1Text_1"></string>
+    <string name="zona0_1Text_2"></string>
+
 </resources>
