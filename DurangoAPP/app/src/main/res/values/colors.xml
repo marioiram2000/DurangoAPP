@@ -10,4 +10,6 @@
     <color name="yellow">#face02</color>
     <color name="wine">#660026</color>
     <color name="darkMagenta">#c81933</color>
+    <color name="darkWine">#2e0011</color>
+    <color name="lightestWine">#ffc7dc</color>
 </resources>
