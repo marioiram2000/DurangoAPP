@@ -7,4 +7,60 @@
     android:layout_height="match_parent"
     tools:context=".zona0_1">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <ImageView
+      android:id="@+id/imgZona0_1_Albergue"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="96dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.461"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/barria" />
+
+  <ImageView
+      android:id="@+id/imgZona0_1_Txorimalo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/txtZona0_1_Txorimalo"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnZona0_1_Start"
+      app:layout_constraintVertical_bias="0.722"
+      tools:srcCompat="@tools:sample/avatars"
+      android:visibility="invisible"/>
+
+  <TextView
+      android:id="@+id/txtZona0_1_Txorimalo"
+      android:layout_width="224dp"
+      android:layout_height="125dp"
+      android:layout_marginTop="112dp"
+      android:layout_marginEnd="24dp"
+      android:text="@string/zona0_1Text_2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnZona0_1_Start" />
+
+  <Button
+      android:id="@+id/btnZona0_1_Start"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="52dp"
+      android:text="@string/giltzaren_bila"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imgZona0_1_Albergue"
+      android:visibility="invisible"/>
+
+  <TextView
+      android:id="@+id/txtZona0_1_Narrador"
+      android:layout_width="378dp"
+      android:layout_height="138dp"
+      android:text="@string/zona0_1Text_1"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnZona0_1_Start" />
+</androidx.constraintlayout.widget.ConstraintLayout>
