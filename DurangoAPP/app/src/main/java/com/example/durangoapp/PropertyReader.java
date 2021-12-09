@@ -5,8 +5,8 @@ import java.util.Properties;
 
 public class PropertyReader {
 
-    private static Properties props = new Properties();
-    private static String propertyFile = "";
+    private static final Properties props = new Properties();
+    private static String propertyFile = "assets/mainProperties.properties";
 
     static {
         try (FileInputStream input = new FileInputStream(propertyFile)) {
