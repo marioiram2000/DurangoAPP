@@ -17,13 +17,13 @@ public class zona0_1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zona0_1);
 
-        imgZona0_1_Principal = findViewById(R.id.imgZona0_1_Principal);
+        imgZona0_1_Principal = (ImageView) findViewById(R.id.imgZona0_1_Principal);
         imgZona0_1_Txorimalo = findViewById(R.id.imgZona0_1_Txorimalo);
         txtZona0_1_Narrador = findViewById(R.id.txtZona0_1_Narrador);
         txtZona0_1_Txorimalo = findViewById(R.id.txtZona0_1_Txorimalo);
         btnZona0_1_Start = findViewById(R.id.btnZona0_1_Start);
 
-
+        txtZona0_1_Narrador.setSelected(true);
 
     }
 }

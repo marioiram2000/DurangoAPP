@@ -3,6 +3,7 @@ package com.example.durangoapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -22,6 +23,8 @@ import BBDD.DBHelper;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button pruebas;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +36,21 @@ public class MainActivity extends AppCompatActivity {
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
+
+
+
+        pruebas = (Button) findViewById(R.id.btnPruebas);
+
+        pruebas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, zona0_1.class);
+                startActivity(intent);
+            }
+        });
     }
+
+
 
     public void newGame(View view) {
         crearGrupo();
