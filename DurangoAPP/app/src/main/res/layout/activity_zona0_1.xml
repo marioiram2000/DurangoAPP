@@ -57,19 +57,27 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/txtZona0_1_Txorimalo" />
 
-  <TextView
-      android:id="@+id/txtZona0_1_Narrador"
-      style="@style/normalText"
-      android:layout_width="369dp"
-      android:layout_height="117dp"
-      android:maxLines="5"
-      android:scrollbars="vertical"
-      android:text="@string/zona0_1Text_1"
+  <ScrollView
+      android:id="@+id/scroller"
+      android:layout_width="380dp"
+      android:layout_height="wrap_content"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.677"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/imgZona0_1_Principal"
-      app:layout_constraintVertical_bias="0.196" />
+      app:layout_constraintVertical_bias="0.373">
+    <TextView
+        android:id="@+id/txtZona0_1_Narrador"
+        style="@style/normalText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:maxLines="5"
+        android:scrollbars="vertical">
+      <requestFocus />
+    </TextView>
+  </ScrollView>
 
   <Button
       android:id="@+id/btnZona0_1_Skip"
@@ -79,7 +87,7 @@
       android:layout_marginEnd="88dp"
       android:text="----->"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/txtZona0_1_Narrador" />
+      app:layout_constraintTop_toBottomOf="@+id/scroller" />
 
   <TextView
       android:id="@+id/txtZona0_1_Titulo"

@@ -2,11 +2,18 @@ package com.example.durangoapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class zona0_1 extends AppCompatActivity {
 
@@ -27,8 +34,20 @@ public class zona0_1 extends AppCompatActivity {
         btnZona0_1_Start = findViewById(R.id.btnZona0_1_Start);
         btnZona0_1_Skip = findViewById(R.id.btnZona0_1_Skip);
 
+        setText(getString(R.string.zona0_1Text_1));
+
         //txtZona0_1_Narrador.setSelected(true);
         txtZona0_1_Narrador.setMovementMethod(new ScrollingMovementMethod());
+        final ScrollView scroller = (ScrollView) findViewById(R.id.scroller);
+        scroller.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    scroller.fullScroll(View.FOCUS_DOWN);
+                }
+            }
+        });
 
         btnZona0_1_Skip.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,5 +65,35 @@ public class zona0_1 extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void setText(final String s)
+    {
+        final int[] i = new int[1];
+        i[0] = 0;
+        final int length = s.length();
+        final Handler handler = new Handler()
+        {
+            @Override
+            public void handleMessage(Message msg) {
+                super.handleMessage(msg);
+                char c= s.charAt(i[0]);
+                Log.d("Strange",""+c);
+                txtZona0_1_Narrador.append(String.valueOf(c));
+                i[0]++;
+            }
+        };
+
+        final Timer timer = new Timer();
+        TimerTask taskEverySplitSecond = new TimerTask() {
+            @Override
+            public void run() {
+                handler.sendEmptyMessage(0);
+                if (i[0] == length - 1) {
+                    timer.cancel();
+                }
+            }
+        };
+        timer.schedule(taskEverySplitSecond, 1, 10);
     }
 }
