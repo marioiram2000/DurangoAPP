@@ -14,7 +14,7 @@ public class DBHelper extends SQLiteOpenHelper {
     private final String sqlCreateGruAct = "CREATE TABLE IF NOT EXISTS gruact (id_grupo INTEGER, id_actividad INTEGER, PRIMARY KEY (id_grupo, id_actividad))";
 
     public DBHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, factory, 1);
+        super(context, name, factory, version);
     }
 
     @Override

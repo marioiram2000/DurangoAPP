@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         DBHelper dbh = new DBHelper(this, "durangoDB", null, 1);
         db = dbh.getWritableDatabase();
 
-
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
@@ -42,10 +41,7 @@ public class MainActivity extends AppCompatActivity {
         // Hide the status bar.
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
-
-
-
-
+        
         pruebas = (Button) findViewById(R.id.btnPruebas);
 
         pruebas.setOnClickListener(new View.OnClickListener() {
