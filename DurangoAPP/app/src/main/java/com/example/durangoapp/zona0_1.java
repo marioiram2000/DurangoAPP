@@ -31,23 +31,24 @@ public class zona0_1 extends AppCompatActivity {
         imgZona0_1_Sobre = findViewById(R.id.imgZona0_1_Sobre);
         txtZona0_1_Narrador = findViewById(R.id.txtZona0_1_Narrador);
         txtZona0_1_Txorimalo = findViewById(R.id.txtZona0_1_Txorimalo);
-        btnZona0_1_Start = findViewById(R.id.btnZona0_1_Start);
+        btnZona0_1_Start = findViewById(R.id.btnZona0_2_Start);
         btnZona0_1_Skip = findViewById(R.id.btnZona0_1_Skip);
 
-        setText(getString(R.string.zona0_1Text_1));
+        setText(getString(R.string.zona0_1Text_1), txtZona0_1_Narrador);
 
         //txtZona0_1_Narrador.setSelected(true);
         txtZona0_1_Narrador.setMovementMethod(new ScrollingMovementMethod());
-        final ScrollView scroller = (ScrollView) findViewById(R.id.scroller);
-        scroller.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+        final ScrollView scroller01 = (ScrollView) findViewById(R.id.scrollerZona0_1);
+        scroller01.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus) {
-                    scroller.fullScroll(View.FOCUS_DOWN);
+                    scroller01.fullScroll(View.FOCUS_DOWN);
                 }
             }
         });
+
 
         btnZona0_1_Skip.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,13 +62,24 @@ public class zona0_1 extends AppCompatActivity {
                 imgZona0_1_Txorimalo.setImageDrawable(getResources().getDrawable(R.drawable.txorimalo));
                 btnZona0_1_Start.setVisibility(View.VISIBLE);
                 txtZona0_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
+                setText(getString(R.string.zona0_1Text_2), txtZona0_1_Txorimalo);
+                final ScrollView scroller02 = (ScrollView) findViewById(R.id.scrollerZona0_2);
+                scroller01.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+
+                    @Override
+                    public void onFocusChange(View v, boolean hasFocus) {
+                        if (hasFocus) {
+                            scroller02.fullScroll(View.FOCUS_DOWN);
+                        }
+                    }
+                });
 
             }
         });
 
     }
 
-    public void setText(final String s)
+    public void setText(final String s, TextView txt)
     {
         final int[] i = new int[1];
         i[0] = 0;
@@ -79,7 +91,7 @@ public class zona0_1 extends AppCompatActivity {
                 super.handleMessage(msg);
                 char c= s.charAt(i[0]);
                 Log.d("Strange",""+c);
-                txtZona0_1_Narrador.append(String.valueOf(c));
+                txt.append(String.valueOf(c));
                 i[0]++;
             }
         };
@@ -94,6 +106,6 @@ public class zona0_1 extends AppCompatActivity {
                 }
             }
         };
-        timer.schedule(taskEverySplitSecond, 1, 10);
+        timer.schedule(taskEverySplitSecond, 1, 50);
     }
 }

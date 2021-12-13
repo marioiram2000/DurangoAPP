@@ -25,40 +25,51 @@
       android:layout_marginStart="20dp"
       android:layout_marginTop="92dp"
       android:visibility="invisible"
-      app:layout_constraintEnd_toStartOf="@+id/txtZona0_1_Txorimalo"
+      app:layout_constraintEnd_toStartOf="@id/scrollerZona0_2"
       app:layout_constraintHorizontal_bias="0.028"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/imgZona0_1_Sobre"
       tools:srcCompat="@drawable/txorimalo" />
 
-  <TextView
-      android:id="@+id/txtZona0_1_Txorimalo"
-      style="@style/normalText"
+  <ScrollView
+      android:id="@+id/scrollerZona0_2"
       android:layout_width="231dp"
       android:layout_height="228dp"
-      android:layout_marginTop="40dp"
-      android:layout_marginEnd="20dp"
-      android:maxLines="7"
-      android:scrollbars="vertical"
-      android:text="@string/zona0_1Text_2"
-      android:visibility="invisible"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/imgZona0_1_Sobre" />
+      app:layout_constraintTop_toBottomOf="@+id/imgZona0_1_Sobre">
+    <TextView
+        android:id="@+id/txtZona0_1_Txorimalo"
+        style="@style/normalText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:maxLines="7"
+        android:gravity="bottom"
+        android:scrollbars="vertical"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgZona0_1_Sobre">
+      <requestFocus />
+    </TextView>
+  </ScrollView>
+
 
   <Button
-      android:id="@+id/btnZona0_1_Start"
+      android:id="@+id/btnZona0_2_Start"
       style='@style/buttonText'
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="12dp"
       android:text="@string/giltzaren_bila"
       android:visibility="invisible"
+      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/txtZona0_1_Txorimalo" />
+      app:layout_constraintTop_toBottomOf="@id/scrollerZona0_2" />
 
   <ScrollView
-      android:id="@+id/scroller"
+      android:id="@+id/scrollerZona0_1"
       android:layout_width="380dp"
       android:layout_height="wrap_content"
       app:layout_constraintBottom_toBottomOf="parent"
@@ -84,10 +95,11 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="36dp"
-      android:layout_marginEnd="88dp"
+      android:layout_marginEnd="46dp"
+      android:layout_marginBottom="46dp"
       android:text="----->"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/scroller" />
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
 
   <TextView
       android:id="@+id/txtZona0_1_Titulo"
