@@ -8,9 +8,15 @@
     <string name="giltzaren_bila">"GILTZAREN BILA!"</string>
     <string name="new_group_error">Sartu taldearen izena</string>
     <string name="aukeratu_zure_taldea">Aukeratu zure taldea:</string>
+
+    <!--  Strings Zona 0  -->
+    <string name="txtZona0_1_Titulo">BARRIA</string>
     <string name="zona0_1Text_1">Leioako Txomin Aresti ikastetxeko LH 3.mailako ikasleak, urtero bezala, asteburuko txango bat egingo dute. Ostiralean goizeko 9etan maletak autobusean sartu zituzten eta autobusean sartu ziren Durangoko aterpetxe batera bidean. Bidaia oso lasaia izan zen, ikasle guztiak irrika handia zeukaten Aterpetxera ailegatzeko. Baina bat-batean Durangoko aterpetxera ailegatzean gutun bat ikusi zuten atean.</string>
     <string name="zona0_1Text_2">Kaixo Txomin Arestiko ikastetxeko LH3 ko ikasleak. Aterpetxeko zuzendaria naiz, Txorimalo eroa, tradizioa denez, aterpetxera sartzeko DURANGO-ko hizkiak lortu beharko dituzue gure herriaren kultura, historia eta gizartea ezagutuz. Hemen, Durangon gustatzen zaigu jendea hemendik ateratzean gure herriko kultura-ondare garrantzitsuak ezagutzea. Baina zer demontre da Kultura Ondarea? Herri bakoitzean gertakizun historiko eta garrantzi kulturala dutenari deitzen zaio, gaur egunera arte mantendu eta gaur egungo belaunaldiei helarazi zaiena. Horregatik, gure aterpetxean asteburu zoragarri bat pasatzeko, Durangoko hainbat kultura ondare ezagutu beharko dituzue. Kultura-ondare bakoitzean, azalpen batzuk emango dizkizuete eta erronka bat ezarriko zaizue, DURANGO-ko kultura ondare ezberdinei dagozkien hizkiak lortzeko. Ni zuen atzetik egongo naiz eta erronkak lortzen badituzue hizkiak nik emango dizkizuet. Geroago, aterpetxera bueltatzen zaretenean, guztiok batera hizkiak postontzian sartuko ditugu eta hori izango da zuen “giltza”. Zorte on eta ordu batzuk barru hemen egongo gara guztiok (espero dut) ji ji.
-       \n Atope Ekipo!
-</string>
+       \n Atope Ekipo!</string>
+
+    <!-- Strings Zona 1 -->
+    <string name="txtZona1_1_Titulo">Santa Mariako Eliza</string>
+
 
 </resources>

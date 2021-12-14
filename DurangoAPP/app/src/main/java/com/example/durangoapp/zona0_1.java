@@ -39,7 +39,6 @@ public class zona0_1 extends AppCompatActivity {
 
         setText(getString(R.string.zona0_1Text_1), txtZona0_1_Narrador);
 
-        //txtZona0_1_Narrador.setSelected(true);
         txtZona0_1_Narrador.setMovementMethod(new ScrollingMovementMethod());
         final ScrollView scroller01 = (ScrollView) findViewById(R.id.scrollerZona0_1);
         scroller01.setOnFocusChangeListener(new View.OnFocusChangeListener() {
@@ -52,13 +51,9 @@ public class zona0_1 extends AppCompatActivity {
             }
         });
 
-        audio = MediaPlayer.create(zona0_1.this,R.raw.zona0_1_narrador);
-        audio.start();
-
+        //Audio del narrador cuando llegas al albergue
         audio_narrador = MediaPlayer.create(zona0_1.this,R.raw.zona0_1_narrador);
         audio_narrador.start();
-
-
 
 
         btnZona0_1_Skip.setOnClickListener(new View.OnClickListener() {
@@ -93,9 +88,11 @@ public class zona0_1 extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        super.onBackPressed();
         audio_narrador.stop();
     }
 
+    //Se visualizar el texto palabra por palabra
     public void setText(final String s, TextView txt)
     {
         final int[] i = new int[1];
