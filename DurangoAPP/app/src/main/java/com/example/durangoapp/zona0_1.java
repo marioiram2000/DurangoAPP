@@ -52,6 +52,8 @@ public class zona0_1 extends AppCompatActivity {
             }
         });
 
+        audio = MediaPlayer.create(zona0_1.this,R.raw.zona0_1_narrador);
+        audio.start();
 
         audio_narrador = MediaPlayer.create(zona0_1.this,R.raw.zona0_1_narrador);
         audio_narrador.start();
