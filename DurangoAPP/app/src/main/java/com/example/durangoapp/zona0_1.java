@@ -50,6 +50,7 @@ public class zona0_1 extends AppCompatActivity {
                 }
             }
         });
+        
 
         //Audio del narrador cuando llegas al albergue
         audio_narrador = MediaPlayer.create(zona0_1.this,R.raw.zona0_1_narrador);
