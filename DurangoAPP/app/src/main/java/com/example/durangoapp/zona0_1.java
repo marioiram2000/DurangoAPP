@@ -22,7 +22,7 @@ public class zona0_1 extends AppCompatActivity {
     private ImageView imgZona0_1_Principal, imgZona0_1_Txorimalo,imgZona0_1_Sobre;
     private TextView txtZona0_1_Txorimalo, txtZona0_1_Narrador;
     private Button btnZona0_1_Start, btnZona0_1_Skip;
-    private MediaPlayer audio;
+    private MediaPlayer audio_narrador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,15 +52,17 @@ public class zona0_1 extends AppCompatActivity {
             }
         });
 
-<<<<<<< Updated upstream
-=======
-        audio = MediaPlayer.create(zona0_1.this,R.raw.zona0_1_narrador);
-        audio.start();
->>>>>>> Stashed changes
+
+        audio_narrador = MediaPlayer.create(zona0_1.this,R.raw.zona0_1_narrador);
+        audio_narrador.start();
+
+
+
 
         btnZona0_1_Skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                audio_narrador.stop();
                 imgZona0_1_Principal.setVisibility(View.INVISIBLE);
                 imgZona0_1_Sobre.setVisibility(View.VISIBLE);
                 txtZona0_1_Narrador.setVisibility(View.INVISIBLE);
@@ -85,6 +87,11 @@ public class zona0_1 extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        audio_narrador.stop();
     }
 
     public void setText(final String s, TextView txt)
