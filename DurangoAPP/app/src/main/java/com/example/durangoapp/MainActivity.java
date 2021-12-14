@@ -8,8 +8,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -20,6 +22,8 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 import BBDD.DBHelper;
+import BBDD.dao.GrupoDAO;
+import BBDD.modelo.Grupo;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -78,7 +82,9 @@ public class MainActivity extends AppCompatActivity {
                 etGroup.setError(getString(R.string.new_group_error));
             } else {
                 etGroup.setError(null);
-                //crearConfigGrupo(group);
+                new GrupoDAO().insert(db, group);
+                Intent intent = new Intent(MainActivity.this, zona0_1.class);
+                startActivity(intent);
             }
         });
     }
@@ -87,35 +93,18 @@ public class MainActivity extends AppCompatActivity {
         Dialog dialogElegirGrupo = new Dialog(this);
         dialogElegirGrupo.setContentView(R.layout.dialog_elegir_grupo);
 
-        //Button startBtn = (Button) dialogElegirGrupo.findViewById(R.id.dialogCrearGrupoButtonStart);
-        //EditText etGroup = dialogElegirGrupo.findViewById(R.id.dialogCrearGrupoEditTextGroup);
+        Button startBtn = (Button) dialogElegirGrupo.findViewById(R.id.dialogCrearGrupoButtonStart);
+        EditText etGroup = dialogElegirGrupo.findViewById(R.id.dialogCrearGrupoEditTextGroup);
+        Spinner spinnerGrupos = dialogElegirGrupo.findViewById(R.id.DialogElegirGrupoSpinner);
 
+        ArrayList<Grupo> grupos = new GrupoDAO().select(db);
+
+        /*
+        AÑADIR COSAS AL SPINNER
+         */
         dialogElegirGrupo.show();
     }
 
-    private void crearConfigGrupo(String grupo) {
-        try {
-            FileOutputStream fos = null;
-            File f = new File("../assets/" + grupo + ".properties");
-            if(f.createNewFile()) {
-                fos = new FileOutputStream(f);
-
-                ArrayList<String> properties = readMainProperties();
-                if (properties != null) {
-                    for (String property : properties) {
-                        fos.write(property.getBytes(StandardCharsets.UTF_8));
-                    }
-                    fos.flush();
-                    fos.close();
-                }
-            }else{
-                Log.d("crearConfigGrupo: ", "El fichero ya existe");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }
 
     private ArrayList<String> readMainProperties() {
         try {
