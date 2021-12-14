@@ -52,11 +52,9 @@ public class zona0_1 extends AppCompatActivity {
             }
         });
 
-<<<<<<< Updated upstream
-=======
         audio = MediaPlayer.create(zona0_1.this,R.raw.zona0_1_narrador);
         audio.start();
->>>>>>> Stashed changes
+
 
         btnZona0_1_Skip.setOnClickListener(new View.OnClickListener() {
             @Override
