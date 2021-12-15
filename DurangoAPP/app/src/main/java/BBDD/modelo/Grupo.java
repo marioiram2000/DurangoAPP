@@ -18,10 +18,7 @@ public class Grupo {
     @NonNull
     @Override
     public String toString() {
-        return "Grupo{" +
-                "id=" + id +
-                ", nombre='" + nombre + '\'' +
-                '}';
+        return nombre;
     }
 
     public int getId() {
