@@ -2,6 +2,7 @@ package com.example.durangoapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -20,7 +21,7 @@ import java.util.TimerTask;
 
 public class zona0_1 extends AppCompatActivity {
 
-    private ImageView imgZona0_1_Principal, imgZona0_1_Txorimalo,imgZona0_1_Sobre;
+    private ImageView imgZona0_1_Principal, imgZona0_1_Txorimalo, imgZona0_1_Sobre;
     private TextView txtZona0_1_Txorimalo, txtZona0_1_Narrador;
     private Button btnZona0_1_Start, btnZona0_1_Skip;
     private MediaPlayer audio_narrador, audio_txorimalo;
@@ -92,8 +93,18 @@ public class zona0_1 extends AppCompatActivity {
             }
         });
 
+        //ESTO ES PROVISIONAL PARA HACER PRUEBAS. ESTE BOTON DEBERIA LLEVARTE AL MAPA
+        btnZona0_1_Start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(zona0_1.this, zona1_1.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
+    //Parar el audio cuando se pulsa el boton back
     @Override
     public void onBackPressed() {
         super.onBackPressed();
@@ -116,7 +127,7 @@ public class zona0_1 extends AppCompatActivity {
             public void handleMessage(Message msg) {
                 super.handleMessage(msg);
                 char c= s.charAt(i[0]);
-                Log.d("Strange",""+c);
+                //Log.d("Strange",""+c);
                 txt.append(String.valueOf(c));
                 i[0]++;
             }
