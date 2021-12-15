@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
@@ -22,7 +23,7 @@ public class zona0_1 extends AppCompatActivity {
     private ImageView imgZona0_1_Principal, imgZona0_1_Txorimalo,imgZona0_1_Sobre;
     private TextView txtZona0_1_Txorimalo, txtZona0_1_Narrador;
     private Button btnZona0_1_Start, btnZona0_1_Skip;
-    private MediaPlayer audio_narrador;
+    private MediaPlayer audio_narrador, audio_txorimalo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,7 @@ public class zona0_1 extends AppCompatActivity {
         btnZona0_1_Start = findViewById(R.id.btnZona0_2_Start);
         btnZona0_1_Skip = findViewById(R.id.btnZona0_1_Skip);
 
-        setText(getString(R.string.zona0_1Text_1), txtZona0_1_Narrador);
+        setText(getString(R.string.zona0_1Text_1), txtZona0_1_Narrador, 80);
 
         txtZona0_1_Narrador.setMovementMethod(new ScrollingMovementMethod());
         final ScrollView scroller01 = (ScrollView) findViewById(R.id.scrollerZona0_1);
@@ -70,7 +71,13 @@ public class zona0_1 extends AppCompatActivity {
                 imgZona0_1_Txorimalo.setImageDrawable(getResources().getDrawable(R.drawable.txorimalo));
                 btnZona0_1_Start.setVisibility(View.VISIBLE);
                 txtZona0_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
-                setText(getString(R.string.zona0_1Text_2), txtZona0_1_Txorimalo);
+
+                //audio del txorimalo
+                audio_txorimalo = MediaPlayer.create(zona0_1.this,R.raw.zona0_2_txorimalo);
+                audio_txorimalo.start();
+
+                //texto del audio letra por letra
+                setText(getString(R.string.zona0_1Text_2), txtZona0_1_Txorimalo, 65);
                 final ScrollView scroller02 = (ScrollView) findViewById(R.id.scrollerZona0_2);
                 scroller01.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 
@@ -91,15 +98,19 @@ public class zona0_1 extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         audio_narrador.stop();
+        if (audio_txorimalo!=null){
+            audio_txorimalo.stop();
+        }
+
     }
 
     //Se visualizar el texto palabra por palabra
-    public void setText(final String s, TextView txt)
+    public void setText(final String s, TextView txt, int velocidad)
     {
         final int[] i = new int[1];
         i[0] = 0;
         final int length = s.length();
-        final Handler handler = new Handler()
+        final Handler handler = new Handler(Looper.myLooper())
         {
             @Override
             public void handleMessage(Message msg) {
@@ -121,6 +132,6 @@ public class zona0_1 extends AppCompatActivity {
                 }
             }
         };
-        timer.schedule(taskEverySplitSecond, 1, 50);
+        timer.schedule(taskEverySplitSecond, 1, velocidad);
     }
 }

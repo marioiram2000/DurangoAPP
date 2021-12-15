@@ -18,5 +18,25 @@
     <!-- Strings Zona 1 -->
     <string name="txtZona1_1_Titulo">Santa Mariako Eliza</string>
 
-
+    <!--Test Zona 1    -->
+    <string name="txtZona1_7_Titulo">Test Galderak</string>
+    <string name="zona1_7_Pregunta1">Noiz egin zen Durangoko Santa Maria Eliza?</string>
+    <string name="zona1_7_Respuesta_1a">XV. mendean</string>
+    <string name="zona1_7_Respuesta_1b">XIV. mendean</string>
+    <string name="zona1_7_Respuesta_1c">XVI. mendean</string>
+    <string name="zona1_7_Pregunta2">Zergatik berregituratu zen Santa Mariako Eliza?</string>
+    <string name="zona1_7_Respuesta_2a">Erdi Aroko Gerren ondorioz</string>
+    <string name="zona1_7_Respuesta_2b">Gerra Zibilean gertatu ziren bonbardaketengatik</string>
+    <string name="zona1_7_Respuesta_2c">Tren batek elizaren kontra talka egin zuelako</string>
+    <string name="zona1_7_Pregunta3">Santa Mariako Eliza Euskadiko handiena da?</string>
+    <string name="zona1_7_Respuesta_3a">Bai</string>
+    <string name="zona1_7_Respuesta_3b">Ez</string>
+    <string name="zona1_7_Pregunta4">Zer gertatu zen Santa Maria Elizan Gerra Zibilean?</string>
+    <string name="zona1_7_Respuesta_4a">Bonbardaketak</string>
+    <string name="zona1_7_Respuesta_4b">Tsunamia</string>
+    <string name="zona1_7_Respuesta_4c">Terremotoa</string>
+    <string name="zona1_7_Pregunta5">Zeren ondoan dago Santa Maria Eliza?</string>
+    <string name="zona1_7_Respuesta_5a">Eliza baten ondoan</string>
+    <string name="zona1_7_Respuesta_5b">Kanpandorre baten ondoan</string>
+    <string name="zona1_7_Respuesta_5c">Antzoki baten ondoan</string>
 </resources>

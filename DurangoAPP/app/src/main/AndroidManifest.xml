@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DurangoAPP">
         <activity
+            android:name=".Zona1_7"
+            android:exported="true" />
+        <activity
             android:name=".zona1_1"
             android:exported="true" />
         <activity
