@@ -67,7 +67,7 @@ public class zona1_1 extends AppCompatActivity {
         audio_Txorimalo.stop();
     }
 
-    //Se visualizar el texto palabra por palabra
+    //Se visualiza el texto palabra por palabra
     public void setText(final String s, TextView txt, int velocidad)
     {
         final int[] i = new int[1];

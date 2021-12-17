@@ -115,6 +115,7 @@ public class zona0_1 extends AppCompatActivity {
 
     }
 
+
     //Se visualizar el texto palabra por palabra
     public void setText(final String s, TextView txt, int velocidad)
     {

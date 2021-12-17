@@ -39,12 +39,12 @@
         app:layout_constraintTop_toBottomOf="@id/txtZona1_7_Pregunta">
 
         <RadioGroup
-            android:id="@+id/rdGroup"
+            android:id="@+id/zona1_7_rdGroup"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <RadioButton
-                android:id="@+id/rdA"
+                android:id="@+id/zona1_7_rdA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Prueba"
@@ -53,7 +53,7 @@
                  />
 
             <RadioButton
-                android:id="@+id/rdB"
+                android:id="@+id/zona1_7_rdB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/normalText"
@@ -61,7 +61,7 @@
                  />
 
             <RadioButton
-                android:id="@+id/rdC"
+                android:id="@+id/zona1_7_rdC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/normalText"
