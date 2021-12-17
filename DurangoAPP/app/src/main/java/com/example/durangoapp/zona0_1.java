@@ -39,7 +39,7 @@ public class zona0_1 extends AppCompatActivity {
         btnZona0_1_Start = findViewById(R.id.btnZona0_2_Start);
         btnZona0_1_Skip = findViewById(R.id.btnZona0_1_Skip);
 
-        setText(getString(R.string.zona0_1Text_1), txtZona0_1_Narrador, 80);
+        setText(getString(R.string.txtZona0_1_Narrador_1), txtZona0_1_Narrador, 80);
 
         txtZona0_1_Narrador.setMovementMethod(new ScrollingMovementMethod());
         final ScrollView scroller01 = (ScrollView) findViewById(R.id.scrollerZona0_1);
@@ -78,7 +78,7 @@ public class zona0_1 extends AppCompatActivity {
                 audio_txorimalo.start();
 
                 //texto del audio letra por letra
-                setText(getString(R.string.zona0_1Text_2), txtZona0_1_Txorimalo, 65);
+                setText(getString(R.string.txtZona0_1_Txorimalo_1), txtZona0_1_Txorimalo, 65);
                 final ScrollView scroller02 = (ScrollView) findViewById(R.id.scrollerZona0_2);
                 scroller01.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 
