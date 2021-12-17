@@ -7,12 +7,26 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.HashMap;
 
 public class Zona1_7 extends AppCompatActivity {
 
 
-    private HashMap <String, String []> preguntas = new HashMap<String, String[]>();
+    private String[] preguntas = new String[] {getString(R.string.zona1_7_Pregunta1),
+            getString(R.string.zona1_7_Pregunta2),
+            getString(R.string.zona1_7_Pregunta3),
+            getString(R.string.zona1_7_Pregunta4),
+            getString(R.string.zona1_7_Pregunta5)};
+
+    private Integer [] correctas = new Integer[]{R.id.zona1_7_rdA,
+            R.id.zona1_7_rdB,
+            R.id.zona1_7_rdA,
+            R.id.zona1_7_rdA,
+            R.id.zona1_7_rdA};
+
+    private int i=0;
 
 
     @Override
@@ -20,7 +34,6 @@ public class Zona1_7 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zona1_7);
 
-        cargarPreguntas();
         TextView pregunta = (TextView) findViewById(R.id.txtZona1_7_Pregunta);
         RadioGroup rg = (RadioGroup) findViewById(R.id.zona1_7_rdGroup);
 
@@ -28,23 +41,30 @@ public class Zona1_7 extends AppCompatActivity {
         RadioButton b = (RadioButton) findViewById(R.id.zona1_7_rdB);
         RadioButton c = (RadioButton) findViewById(R.id.zona1_7_rdC);
 
+        FloatingActionButton btn= findViewById(R.id.zona1_7_fbtn);
+
+        pregunta.setText(preguntas[i]);
+        a.setText(getString(R.string.zona1_7_Respuesta_1a));
+        b.setText(getString(R.string.zona1_7_Respuesta_1b));
+        c.setText(getString(R.string.zona1_7_Respuesta_1c));
+
+        if (rg.getCheckedRadioButtonId() == correctas[i]){
+            i++;
+        }
+
+
+
+
+
+//        switch (i){
+//            case 0:
+//                pregunta.setText(preguntas[i]);
+//                a.setText();
+//        }
+
+
+
 
     }
 
-    private void cargarPreguntas (){
-        preguntas.put(getString(R.string.zona1_7_Pregunta1),
-                new String[]{getString(R.string.zona1_7_Respuesta_1a), getString(R.string.zona1_7_Respuesta_1b), getString(R.string.zona1_7_Respuesta_1c)});
-
-        preguntas.put(getString(R.string.zona1_7_Pregunta2),
-                new String[]{getString(R.string.zona1_7_Respuesta_2a), getString(R.string.zona1_7_Respuesta_2b), getString(R.string.zona1_7_Respuesta_2c)});
-
-        preguntas.put(getString(R.string.zona1_7_Pregunta3),
-                new String[]{getString(R.string.zona1_7_Respuesta_3a), getString(R.string.zona1_7_Respuesta_3b)});
-
-        preguntas.put(getString(R.string.zona1_7_Pregunta4),
-                new String[]{getString(R.string.zona1_7_Respuesta_4a), getString(R.string.zona1_7_Respuesta_4b), getString(R.string.zona1_7_Respuesta_4c)});
-
-        preguntas.put(getString(R.string.zona1_7_Pregunta5),
-                new String[]{getString(R.string.zona1_7_Respuesta_5a), getString(R.string.zona1_7_Respuesta_5b), getString(R.string.zona1_7_Respuesta_5c)});
-    }
 }
