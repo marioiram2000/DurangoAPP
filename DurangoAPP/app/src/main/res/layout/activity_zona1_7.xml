@@ -71,9 +71,11 @@
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/zona1_7_fbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="35dp"
+        android:src="@drawable/ic_action_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
