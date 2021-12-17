@@ -30,10 +30,11 @@ public class zona1_1 extends AppCompatActivity {
 
         imgZona1_1_Iglesia = findViewById(R.id.imgZona1_2_Iglesia);
         txtZona1_1_Txorimalo = findViewById(R.id.txtZona1_1_Txorimalo);
+        btnZona0_1_Video = findViewById(R.id.btnZona1_2_Video);
 
         //Texto 1 Txorimalo
-        setText(getString(R.string.txtZona1_1_Txorimalo_1), txtZona1_1_Txorimalo,60);
         txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
+        setText(getString(R.string.txtZona1_1_Txorimalo_1), txtZona1_1_Txorimalo,60);
         final ScrollView scroller01 = (ScrollView) findViewById(R.id.scrollerZona1_1);
         scroller01.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 
@@ -48,11 +49,38 @@ public class zona1_1 extends AppCompatActivity {
         //Audio inicio Txorimalo
         audio_Txorimalo = MediaPlayer.create(zona1_1.this,R.raw.zona1_1_txorimalo);
         audio_Txorimalo.start();
-
+        //Cuando termina el audio aparece la foto
         audio_Txorimalo.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
                 imgZona1_1_Iglesia.setVisibility(View.VISIBLE);
+
+                //Texto 2 Txorimalo
+                txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
+                txtZona1_1_Txorimalo.setText("");
+                setText(getString(R.string.txtZona1_3_Txorimalo_1), txtZona1_1_Txorimalo,60);
+                final ScrollView scroller01 = (ScrollView) findViewById(R.id.scrollerZona1_1);
+                scroller01.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+
+                    @Override
+                    public void onFocusChange(View v, boolean hasFocus) {
+                        if (hasFocus) {
+                            scroller01.fullScroll(View.FOCUS_DOWN);
+                        }
+                    }
+                });
+                //Audio explicacion iglesia
+                audio_Txorimalo = MediaPlayer.create(zona1_1.this,R.raw.zona1_3_txorimalo);
+                audio_Txorimalo.start();
+
+                audio_Txorimalo.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mediaPlayer) {
+                        btnZona0_1_Video.setVisibility(View.VISIBLE);
+                    }
+                });
+
+
             }
         });
     }

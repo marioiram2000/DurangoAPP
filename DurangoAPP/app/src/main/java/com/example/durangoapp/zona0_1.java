@@ -97,6 +97,7 @@ public class zona0_1 extends AppCompatActivity {
         btnZona0_1_Start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                audio_txorimalo.stop();
                 Intent intent = new Intent(zona0_1.this, zona1_1.class);
                 startActivity(intent);
             }
@@ -114,6 +115,20 @@ public class zona0_1 extends AppCompatActivity {
         }
 
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        audio_narrador.stop();
+        audio_txorimalo.stop();
+    }
+
+    /*
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+    */
 
 
     //Se visualizar el texto palabra por palabra

@@ -18,6 +18,7 @@
     <!-- Strings Zona 1 -->
     <string name="txtZona1_1_Titulo">Santa Mariako Eliza</string>
     <string name="txtZona1_1_Txorimalo_1">Kaixo! Ongi etorri lehenengo geralekura! Durangoko Santa Maria Elizan gaude.</string>
+    <string name="txtZona1_3_Txorimalo_1">Santa Maria XV. mendean eraiki zen, Euskal Herrian, Erdi Aroko alderdi gerrak gertatu zirenean, batez ere Gipuzkoa eta Bizkaian. Geroago berregituratu behar izan zen 1936an Gerra Zibilean gertatu ziren bonbardaketen ondorioz.</string>
 
     <!--Test Zona 1    -->
     <string name="txtZona1_7_Titulo">Test Galderak</string>
