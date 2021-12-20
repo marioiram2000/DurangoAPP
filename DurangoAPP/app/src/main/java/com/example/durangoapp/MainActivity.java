@@ -47,6 +47,15 @@ public class MainActivity extends AppCompatActivity {
         decorView.setSystemUiVisibility(uiOptions);
 
         pruebas = (Button) findViewById(R.id.btnPruebas);
+        Button test = (Button) findViewById(R.id.test);
+
+        test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Zona1_7.class);
+                startActivity(intent);
+            }
+        });
 
         pruebas.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,6 +129,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, zona0_1.class);
         startActivity(intent);
     }
+
+
 
 
 }

@@ -16,6 +16,8 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -23,7 +25,8 @@ public class zona0_1 extends AppCompatActivity {
 
     private ImageView imgZona0_1_Principal, imgZona0_1_Txorimalo, imgZona0_1_Sobre;
     private TextView txtZona0_1_Txorimalo, txtZona0_1_Narrador;
-    private Button btnZona0_1_Start, btnZona0_1_Skip;
+    private Button btnZona0_1_Start;
+    private FloatingActionButton btnZona0_1_Skip;
     private MediaPlayer audio_narrador, audio_txorimalo;
 
     @Override
