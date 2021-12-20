@@ -96,7 +96,6 @@ public class zona1_1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 verVideo();
-                audio_Txorimalo.stop();
             }
         });
 
@@ -125,13 +124,13 @@ public class zona1_1 extends AppCompatActivity {
         video.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
-                dialogVerVideo.hide();
+               // dialogVerVideo.hide();
                 btnZona1_1_Video.setVisibility(View.INVISIBLE);
 
                 //Texto 3 Txorimalo
                 txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
                 txtZona1_1_Txorimalo.setText("");
-                setText(getString(R.string.txtZona1_5_Txorimalo_1), txtZona1_1_Txorimalo,80);
+                setText(getString(R.string.txtZona1_5_Txorimalo_1), txtZona1_1_Txorimalo,65);
                 final ScrollView scroller01 = (ScrollView) findViewById(R.id.scrollerZona1_1);
                 scroller01.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 
@@ -150,11 +149,13 @@ public class zona1_1 extends AppCompatActivity {
                 audio_Txorimalo.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
                     public void onCompletion(MediaPlayer mediaPlayer) {
+                        //Boton inicio Test Visible
+                        btnZona1_7_Test.setVisibility(View.VISIBLE);
 
                         //Texto 4 Txorimalo
                         txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
                         txtZona1_1_Txorimalo.setText("");
-                        setText(getString(R.string.txtZona1_6_Txorimalo_1), txtZona1_1_Txorimalo,80);
+                        setText(getString(R.string.txtZona1_6_Txorimalo_1), txtZona1_1_Txorimalo,70);
                         final ScrollView scroller01 = (ScrollView) findViewById(R.id.scrollerZona1_1);
                         scroller01.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 
@@ -169,8 +170,7 @@ public class zona1_1 extends AppCompatActivity {
                         audio_Txorimalo = MediaPlayer.create(zona1_1.this,R.raw.zona1_6_txorimalo);
                         audio_Txorimalo.start();
 
-                        //Boton inicio Test Visible
-                        btnZona1_7_Test.setVisibility(View.VISIBLE);
+
                     }
                 });
             }
