@@ -2,6 +2,7 @@ package com.example.durangoapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -35,7 +36,7 @@ public class zona1_1 extends AppCompatActivity {
         imgZona1_1_Iglesia = findViewById(R.id.imgZona1_2_Iglesia);
         txtZona1_1_Txorimalo = findViewById(R.id.txtZona1_1_Txorimalo);
         btnZona0_1_Video = findViewById(R.id.btnZona1_2_Video);
-        video = findViewById(R.id.vidZona1_4);
+
 
         //Texto 1 Txorimalo
         txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
@@ -100,8 +101,10 @@ public class zona1_1 extends AppCompatActivity {
     private void verVideo(){
         Dialog dialogVerVideo = new Dialog(this);
         dialogVerVideo.setContentView(R.layout.dialog_zona1_4_video);
+        dialogVerVideo.show();
 
         String path = "android.resource://" + getPackageName() + "/" + R.raw.zona1_4_video;
+        video = dialogVerVideo.findViewById(R.id.vidZona1_4);
         video.setVideoURI(Uri.parse(path));
         video.start();
     }
@@ -120,7 +123,7 @@ public class zona1_1 extends AppCompatActivity {
         final int[] i = new int[1];
         i[0] = 0;
         final int length = s.length();
-        final Handler handler = new Handler()
+        @SuppressLint("HandlerLeak") final Handler handler = new Handler()
         {
             @Override
             public void handleMessage(Message msg) {
