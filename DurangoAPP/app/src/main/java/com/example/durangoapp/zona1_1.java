@@ -124,7 +124,7 @@ public class zona1_1 extends AppCompatActivity {
         video.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
-               // dialogVerVideo.hide();
+                dialogVerVideo.hide();
                 btnZona1_1_Video.setVisibility(View.INVISIBLE);
 
                 //Texto 3 Txorimalo
