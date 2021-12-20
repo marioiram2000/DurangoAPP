@@ -2,7 +2,9 @@ package com.example.durangoapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -12,6 +14,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -22,6 +25,7 @@ public class zona1_1 extends AppCompatActivity {
     private TextView txtZona1_1_Txorimalo;
     private Button btnZona0_1_Video;
     private MediaPlayer audio_Txorimalo;
+    private VideoView video;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,7 @@ public class zona1_1 extends AppCompatActivity {
         imgZona1_1_Iglesia = findViewById(R.id.imgZona1_2_Iglesia);
         txtZona1_1_Txorimalo = findViewById(R.id.txtZona1_1_Txorimalo);
         btnZona0_1_Video = findViewById(R.id.btnZona1_2_Video);
+        video = findViewById(R.id.vidZona1_4);
 
         //Texto 1 Txorimalo
         txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
@@ -83,9 +88,23 @@ public class zona1_1 extends AppCompatActivity {
 
             }
         });
+
+        btnZona0_1_Video.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { verVideo(); }
+        });
+
+
     }
 
+    private void verVideo(){
+        Dialog dialogVerVideo = new Dialog(this);
+        dialogVerVideo.setContentView(R.layout.dialog_zona1_4_video);
 
+        String path = "android.resource://" + getPackageName() + "/" + R.raw.zona1_4_video;
+        video.setVideoURI(Uri.parse(path));
+        video.start();
+    }
 
 
     //Parar el audio cuando se pulsa el boton back
