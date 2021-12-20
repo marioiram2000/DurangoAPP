@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -15,6 +18,8 @@ import android.widget.TextView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.HashMap;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class Zona1_7 extends AppCompatActivity {
 
@@ -47,10 +52,10 @@ public class Zona1_7 extends AppCompatActivity {
             R.id.zona1_7_rdB,
             R.id.zona1_7_rdA,
             R.id.zona1_7_rdA,
-            R.id.zona1_7_rdA};
+            R.id.zona1_7_rdB};
 
     private static int i=0;
-    MediaPlayer audioFallo;
+    MediaPlayer audioFallo, audioCompletado;
     private ImageView txorimalo;
 
     @Override
@@ -59,6 +64,7 @@ public class Zona1_7 extends AppCompatActivity {
         setContentView(R.layout.activity_zona1_7);
 
         TextView pregunta = (TextView) findViewById(R.id.txtZona1_7_Pregunta);
+        TextView txtTxorimalo = findViewById(R.id.zona1_7_txtTxorimalo);
         RadioGroup rg = (RadioGroup) findViewById(R.id.zona1_7_rdGroup);
 
         RadioButton a = (RadioButton) findViewById(R.id.zona1_7_rdA);
@@ -84,12 +90,27 @@ public class Zona1_7 extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     if (rg.getCheckedRadioButtonId() == correctas[i]) {
-                        i++;
-                        recreate();
+                        if (i!=4){
+                            i++;
+                            recreate();
+                            rg.clearCheck();
+                        }else{
+                            audioCompletado = MediaPlayer.create(Zona1_7.this, R.raw.zona1_7_txorimalo_acierto);
+                            audioCompletado.start();
+                            audioCompletado.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                @Override
+                                public void onCompletion(MediaPlayer mediaPlayer) {
+                                    finish();
+                                    //Aqui falta dar la letra
+                                }
+                            });
+                        }
                     }else{
                         audioFallo.start();
                         rg.clearCheck();
                         txorimalo.setVisibility(View.VISIBLE);
+
+                        setText(getString(R.string.zona1_7_TxorimaloFallo),txtTxorimalo , 65);
                     }
                 }
             });
@@ -98,9 +119,40 @@ public class Zona1_7 extends AppCompatActivity {
                 @Override
                 public void onCompletion(MediaPlayer mediaPlayer) {
                     txorimalo.setVisibility(View.INVISIBLE);
+                    txtTxorimalo.setText("");
                 }
             });
 
+    }
+    //Se visualizar el texto palabra por palabra
+    public void setText(final String s, TextView txt, int velocidad)
+    {
+        final int[] i = new int[1];
+        i[0] = 0;
+        final int length = s.length();
+        final Handler handler = new Handler(Looper.myLooper())
+        {
+            @Override
+            public void handleMessage(Message msg) {
+                super.handleMessage(msg);
+                char c= s.charAt(i[0]);
+                //Log.d("Strange",""+c);
+                txt.append(String.valueOf(c));
+                i[0]++;
+            }
+        };
+
+        final Timer timer = new Timer();
+        TimerTask taskEverySplitSecond = new TimerTask() {
+            @Override
+            public void run() {
+                handler.sendEmptyMessage(0);
+                if (i[0] == length - 1) {
+                    timer.cancel();
+                }
+            }
+        };
+        timer.schedule(taskEverySplitSecond, 1, velocidad);
     }
 
 }

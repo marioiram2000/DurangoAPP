@@ -87,4 +87,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
+    <TextView
+        android:id="@+id/zona1_7_txtTxorimalo"
+        style="@style/normalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/zona1_7_txorimalo"
+        app:layout_constraintStart_toEndOf="@id/zona1_7_txorimalo"
+        app:layout_constraintTop_toTopOf="@+id/zona1_7_txorimalo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
