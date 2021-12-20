@@ -63,7 +63,7 @@ public class zona1_1 extends AppCompatActivity {
                 //Texto 2 Txorimalo
                 txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
                 txtZona1_1_Txorimalo.setText("");
-                setText(getString(R.string.txtZona1_3_Txorimalo_1), txtZona1_1_Txorimalo,60);
+                setText(getString(R.string.txtZona1_3_Txorimalo_1), txtZona1_1_Txorimalo,80);
                 final ScrollView scroller01 = (ScrollView) findViewById(R.id.scrollerZona1_1);
                 scroller01.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 
