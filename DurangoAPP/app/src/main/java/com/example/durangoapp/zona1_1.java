@@ -2,7 +2,6 @@ package com.example.durangoapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -191,7 +190,7 @@ public class zona1_1 extends AppCompatActivity {
         final int[] i = new int[1];
         i[0] = 0;
         final int length = s.length();
-        @SuppressLint("HandlerLeak") final Handler handler = new Handler()
+        final Handler handler = new Handler()
         {
             @Override
             public void handleMessage(Message msg) {

@@ -1,0 +1,82 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Santa Mariako Eliza",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-2.63279381, 43.16791895],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kurutziagako gurutzea",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-2.54239552, 43.12852401],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Santa Anako arkua",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-2.63284485, 43.16437993],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Durangoko udala",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-2.63356629, 43.16584887],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Durangoko kulturala",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-2.63263346, 43.16024846],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Durangoko Azoka",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-2.63210988, 43.16759504],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Durangoko Pasioa",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-2.63415327, 43.16620779],
+        "type": "Point"
+      }
+    }
+  ],
+  "type": "FeatureCollection"
+}

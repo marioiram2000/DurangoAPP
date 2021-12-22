@@ -1,4 +1,6 @@
 <resources>
+    <string name="google_maps_key">AIzaSyAWqLqG14_fXNceIQAnBDBFnp2nFwOB8tc</string>
+
     <string name="app_name">DIDAKTIK APP Durango</string>
     <string name="talde_berria">Talde berria</string>
     <string name="jarraitu">Jarraitu</string>
@@ -50,5 +52,6 @@
     <string name="zona1_7_Respuesta_5a">Eliza baten ondoan</string>
     <string name="zona1_7_Respuesta_5b">Kanpandorre baten ondoan</string>
     <string name="zona1_7_Respuesta_5c">Antzoki baten ondoan</string>
+    <string name="title_activity_maps">MapsActivity</string>
     <string name="zona1_7_TxorimaloFallo">Uiiii... Benga, saiatu \nberriro lortuko duzula!</string>
 </resources>

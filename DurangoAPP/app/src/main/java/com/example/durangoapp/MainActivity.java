@@ -60,7 +60,8 @@ public class MainActivity extends AppCompatActivity {
         pruebas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startZona0();
+                Intent intent = new Intent(MainActivity.this, zona0_1.class);
+                startActivity(intent);
             }
         });
     }
