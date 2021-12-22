@@ -2,6 +2,7 @@ package com.example.durangoapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -84,6 +85,7 @@ public class zona1_1 extends AppCompatActivity {
                     @Override
                     public void onCompletion(MediaPlayer mediaPlayer) {
                         btnZona1_1_Video.setVisibility(View.VISIBLE);
+                        btnZona1_7_Test.setVisibility(View.VISIBLE);
                     }
                 });
 
@@ -124,7 +126,7 @@ public class zona1_1 extends AppCompatActivity {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
                 dialogVerVideo.hide();
-                btnZona1_1_Video.setVisibility(View.INVISIBLE);
+                //btnZona1_1_Video.setVisibility(View.INVISIBLE);
 
                 //Texto 3 Txorimalo
                 txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
@@ -149,7 +151,7 @@ public class zona1_1 extends AppCompatActivity {
                     @Override
                     public void onCompletion(MediaPlayer mediaPlayer) {
                         //Boton inicio Test Visible
-                        btnZona1_7_Test.setVisibility(View.VISIBLE);
+
 
                         //Texto 4 Txorimalo
                         txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
@@ -190,7 +192,7 @@ public class zona1_1 extends AppCompatActivity {
         final int[] i = new int[1];
         i[0] = 0;
         final int length = s.length();
-        final Handler handler = new Handler()
+        @SuppressLint("HandlerLeak") final Handler handler = new Handler()
         {
             @Override
             public void handleMessage(Message msg) {
