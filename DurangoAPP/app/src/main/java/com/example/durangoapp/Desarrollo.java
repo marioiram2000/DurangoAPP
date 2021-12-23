@@ -42,6 +42,15 @@ public class Desarrollo extends AppCompatActivity {
             }
         });
 
+        Button btnVideo = (Button) findViewById(R.id.btnVideo_desa);
+        btnVideo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Desarrollo.this, zona1_4_video.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

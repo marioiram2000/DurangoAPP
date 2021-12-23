@@ -22,6 +22,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DurangoAPP">
         <activity
+            android:name=".zona1_4_video"
+            android:exported="true"
+            />
+        <activity
             android:name=".Desarrollo"
             android:exported="true" />
 

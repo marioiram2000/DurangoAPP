@@ -1,5 +1,6 @@
 package com.example.durangoapp;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -14,6 +15,7 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.MediaController;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.VideoView;
@@ -113,25 +115,49 @@ public class Zona1_1 extends AppCompatActivity {
 
     //Video en Dialogo
     private void verVideo(){
-        Dialog dialogVerVideo = new Dialog(this);
-        dialogVerVideo.setContentView(R.layout.dialog_zona1_4_video);
-        dialogVerVideo.show();
+//        Dialog dialogVerVideo = new Dialog(this);
+//        dialogVerVideo.setContentView(R.layout.dialog_zona1_4_video);
+//        dialogVerVideo.show();
 
-        String path = "android.resource://" + getPackageName() + "/" + R.raw.zona1_4_video;
-        video = dialogVerVideo.findViewById(R.id.vidZona1_4);
-        video.setVideoURI(Uri.parse(path));
-        video.start();
+        Intent intent = new Intent(Zona1_1.this, zona1_4_video.class);
+        startActivityForResult(intent,1244);
 
-        video.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+
+
+
+
+        btnZona1_1_Video.setVisibility(View.INVISIBLE);
+
+
+        //Texto 3 Txorimalo
+        txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
+        txtZona1_1_Txorimalo.setText("");
+        setText(getString(R.string.txtZona1_5_Txorimalo_1), txtZona1_1_Txorimalo,65);
+        final ScrollView scroller01 = (ScrollView) findViewById(R.id.scrollerZona1_1);
+        scroller01.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    scroller01.fullScroll(View.FOCUS_DOWN);
+                }
+            }
+        });
+        //Audio  segunda parte explicacion iglesia tras el video
+        audio_Txorimalo = MediaPlayer.create(Zona1_1.this,R.raw.zona1_5_txorimalo);
+        audio_Txorimalo.start();
+
+        //Cuando termine la segunda explicacion, empezara el audio donde te propone hacer un test
+        audio_Txorimalo.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
-                dialogVerVideo.hide();
-                //btnZona1_1_Video.setVisibility(View.INVISIBLE);
+                //Boton inicio Test Visible
 
-                //Texto 3 Txorimalo
+
+                //Texto 4 Txorimalo
                 txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
                 txtZona1_1_Txorimalo.setText("");
-                setText(getString(R.string.txtZona1_5_Txorimalo_1), txtZona1_1_Txorimalo,65);
+                setText(getString(R.string.txtZona1_6_Txorimalo_1), txtZona1_1_Txorimalo,70);
                 final ScrollView scroller01 = (ScrollView) findViewById(R.id.scrollerZona1_1);
                 scroller01.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 
@@ -143,41 +169,19 @@ public class Zona1_1 extends AppCompatActivity {
                     }
                 });
                 //Audio  segunda parte explicacion iglesia tras el video
-                audio_Txorimalo = MediaPlayer.create(Zona1_1.this,R.raw.zona1_5_txorimalo);
+                audio_Txorimalo = MediaPlayer.create(Zona1_1.this,R.raw.zona1_6_txorimalo);
                 audio_Txorimalo.start();
 
-                //Cuando termine la segunda explicacion, empezara el audio donde te propone hacer un test
-                audio_Txorimalo.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mediaPlayer) {
-                        //Boton inicio Test Visible
 
-
-                        //Texto 4 Txorimalo
-                        txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
-                        txtZona1_1_Txorimalo.setText("");
-                        setText(getString(R.string.txtZona1_6_Txorimalo_1), txtZona1_1_Txorimalo,70);
-                        final ScrollView scroller01 = (ScrollView) findViewById(R.id.scrollerZona1_1);
-                        scroller01.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-
-                            @Override
-                            public void onFocusChange(View v, boolean hasFocus) {
-                                if (hasFocus) {
-                                    scroller01.fullScroll(View.FOCUS_DOWN);
-                                }
-                            }
-                        });
-                        //Audio  segunda parte explicacion iglesia tras el video
-                        audio_Txorimalo = MediaPlayer.create(Zona1_1.this,R.raw.zona1_6_txorimalo);
-                        audio_Txorimalo.start();
-
-
-                    }
-                });
             }
         });
     }
 
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+    }
 
     //Parar el audio cuando se pulsa el boton back
     @Override
