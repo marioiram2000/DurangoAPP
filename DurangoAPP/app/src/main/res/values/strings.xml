@@ -1,5 +1,5 @@
 <resources>
-    <string name="google_maps_key">AIzaSyAWqLqG14_fXNceIQAnBDBFnp2nFwOB8tc</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoic2lnZWNvcnAiLCJhIjoiY2t4ZWp2bTk0MWdobzJxcGdkNHBvdzQwbCJ9.oGh-BPyI8QoqLfSXCPFF2g</string>
 
     <string name="app_name">DIDAKTIK APP Durango</string>
     <string name="talde_berria">Talde berria</string>
