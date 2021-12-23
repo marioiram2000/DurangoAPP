@@ -21,7 +21,7 @@ import android.widget.VideoView;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class zona1_1 extends AppCompatActivity {
+public class Zona1_1 extends AppCompatActivity {
 
     private ImageView imgZona1_1_Txorimalo, imgZona1_1_Iglesia;
     private TextView txtZona1_1_Txorimalo;
@@ -55,7 +55,7 @@ public class zona1_1 extends AppCompatActivity {
         });
 
         //Audio inicio Txorimalo
-        audio_Txorimalo = MediaPlayer.create(zona1_1.this,R.raw.zona1_1_txorimalo);
+        audio_Txorimalo = MediaPlayer.create(Zona1_1.this,R.raw.zona1_1_txorimalo);
         audio_Txorimalo.start();
         //Cuando termina el audio aparece la foto
         audio_Txorimalo.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -78,7 +78,7 @@ public class zona1_1 extends AppCompatActivity {
                     }
                 });
                 //Audio explicacion iglesia
-                audio_Txorimalo = MediaPlayer.create(zona1_1.this,R.raw.zona1_3_txorimalo);
+                audio_Txorimalo = MediaPlayer.create(Zona1_1.this,R.raw.zona1_3_txorimalo);
                 audio_Txorimalo.start();
 
                 audio_Txorimalo.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -103,7 +103,7 @@ public class zona1_1 extends AppCompatActivity {
         btnZona1_7_Test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(zona1_1.this, Zona1_7.class);
+                Intent intent = new Intent(Zona1_1.this, Zona1_7.class);
                 startActivity(intent);
             }
         });
@@ -143,7 +143,7 @@ public class zona1_1 extends AppCompatActivity {
                     }
                 });
                 //Audio  segunda parte explicacion iglesia tras el video
-                audio_Txorimalo = MediaPlayer.create(zona1_1.this,R.raw.zona1_5_txorimalo);
+                audio_Txorimalo = MediaPlayer.create(Zona1_1.this,R.raw.zona1_5_txorimalo);
                 audio_Txorimalo.start();
 
                 //Cuando termine la segunda explicacion, empezara el audio donde te propone hacer un test
@@ -168,7 +168,7 @@ public class zona1_1 extends AppCompatActivity {
                             }
                         });
                         //Audio  segunda parte explicacion iglesia tras el video
-                        audio_Txorimalo = MediaPlayer.create(zona1_1.this,R.raw.zona1_6_txorimalo);
+                        audio_Txorimalo = MediaPlayer.create(Zona1_1.this,R.raw.zona1_6_txorimalo);
                         audio_Txorimalo.start();
 
 

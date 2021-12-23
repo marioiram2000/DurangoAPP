@@ -22,16 +22,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DurangoAPP">
         <activity
+            android:name=".Desarrollo"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
             android:name=".MapaActivity"
             android:exported="true" />
         <activity
             android:name=".Zona1_7"
             android:exported="true" />
         <activity
-            android:name=".zona1_1"
+            android:name=".Zona1_1"
             android:exported="true" />
         <activity
-            android:name=".zona0_1"
+            android:name=".Zona0_1"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
