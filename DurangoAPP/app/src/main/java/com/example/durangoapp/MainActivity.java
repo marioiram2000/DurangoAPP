@@ -13,11 +13,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 import BBDD.DBHelper;
@@ -28,7 +23,6 @@ import BBDD.modelo.Grupo;
 public class MainActivity extends AppCompatActivity {
 
     public static Grupo GRUPO;
-    private Button pruebas;
     private SQLiteDatabase db;
 
     @Override
@@ -46,24 +40,16 @@ public class MainActivity extends AppCompatActivity {
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
-        pruebas = (Button) findViewById(R.id.btnPruebas);
+        //Boton para modo desarrollador
         Button test = (Button) findViewById(R.id.test);
-
         test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Zona1_7.class);
+                Intent intent = new Intent(MainActivity.this, Desarrollo.class);
                 startActivity(intent);
             }
         });
 
-        pruebas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, zona0_1.class);
-                startActivity(intent);
-            }
-        });
     }
 
 
@@ -127,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void startZona0(){
-        Intent intent = new Intent(MainActivity.this, zona0_1.class);
+        Intent intent = new Intent(MainActivity.this, Zona0_1.class);
         startActivity(intent);
     }
 

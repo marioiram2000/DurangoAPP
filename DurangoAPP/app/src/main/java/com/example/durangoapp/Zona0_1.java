@@ -9,7 +9,6 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.text.method.ScrollingMovementMethod;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -21,7 +20,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class zona0_1 extends AppCompatActivity {
+public class Zona0_1 extends AppCompatActivity {
 
     private ImageView imgZona0_1_Principal, imgZona0_1_Txorimalo, imgZona0_1_Sobre;
     private TextView txtZona0_1_Txorimalo, txtZona0_1_Narrador;
@@ -58,7 +57,7 @@ public class zona0_1 extends AppCompatActivity {
         
 
         //Audio del narrador cuando llegas al albergue
-        audio_narrador = MediaPlayer.create(zona0_1.this,R.raw.zona0_1_narrador);
+        audio_narrador = MediaPlayer.create(Zona0_1.this,R.raw.zona0_1_narrador);
         audio_narrador.start();
 
 
@@ -77,7 +76,7 @@ public class zona0_1 extends AppCompatActivity {
                 txtZona0_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
 
                 //audio del txorimalo
-                audio_txorimalo = MediaPlayer.create(zona0_1.this,R.raw.zona0_2_txorimalo);
+                audio_txorimalo = MediaPlayer.create(Zona0_1.this,R.raw.zona0_2_txorimalo);
                 audio_txorimalo.start();
 
                 //texto del audio letra por letra
@@ -101,7 +100,7 @@ public class zona0_1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 audio_txorimalo.stop();
-                Intent intent = new Intent(zona0_1.this, zona1_1.class);
+                Intent intent = new Intent(Zona0_1.this, Zona1_1.class);
                 startActivity(intent);
             }
         });
