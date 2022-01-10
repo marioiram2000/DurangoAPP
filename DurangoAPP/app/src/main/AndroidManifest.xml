@@ -22,13 +22,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DurangoAPP">
         <activity
+            android:name=".Zona2_1"
+            android:exported="true" />
+        <activity
+            android:name=".Zona1_8"
+            android:exported="true" />
+        <activity
             android:name=".zona1_4_video"
-            android:exported="true"
-            />
+            android:exported="true" />
         <activity
             android:name=".Desarrollo"
             android:exported="true" />
-
         <activity
             android:name=".MapaActivity"
             android:exported="true" />

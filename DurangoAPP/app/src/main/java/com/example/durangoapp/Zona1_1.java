@@ -122,12 +122,7 @@ public class Zona1_1 extends AppCompatActivity {
         Intent intent = new Intent(Zona1_1.this, zona1_4_video.class);
         startActivityForResult(intent,1244);
 
-
-
-
-
         btnZona1_1_Video.setVisibility(View.INVISIBLE);
-
 
         //Texto 3 Txorimalo
         txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
@@ -143,6 +138,7 @@ public class Zona1_1 extends AppCompatActivity {
                 }
             }
         });
+
         //Audio  segunda parte explicacion iglesia tras el video
         audio_Txorimalo = MediaPlayer.create(Zona1_1.this,R.raw.zona1_5_txorimalo);
         audio_Txorimalo.start();

@@ -2,7 +2,6 @@ package com.example.durangoapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -17,9 +16,9 @@ public class zona1_4_video extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_zona14_video);
+        setContentView(R.layout.activity_zona1_4_video);
 
-        setContentView(R.layout.activity_zona14_video);
+        setContentView(R.layout.activity_zona1_4_video);
         getSupportActionBar().hide();
 
         View decorView = getWindow().getDecorView();
