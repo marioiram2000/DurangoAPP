@@ -51,6 +51,15 @@ public class Desarrollo extends AppCompatActivity {
             }
         });
 
+        Button btnMapa = (Button) findViewById(R.id.btn_Desa_mapa);
+        btnMapa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Desarrollo.this, MapaActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }
