@@ -71,6 +71,7 @@ public class Zona1_7 extends AppCompatActivity {
         RadioButton b = (RadioButton) findViewById(R.id.zona1_7_rdB);
         RadioButton c = (RadioButton) findViewById(R.id.zona1_7_rdC);
         txorimalo = findViewById(R.id.zona1_7_txorimalo);
+        FloatingActionButton btnVideo = (FloatingActionButton) findViewById(R.id.zona1_7_fbtnVideo);
 
         FloatingActionButton btn= findViewById(R.id.zona1_7_fbtn);
         audioFallo= MediaPlayer.create(Zona1_7.this,R.raw.zona1_7_txorimalo_fallo);
@@ -84,6 +85,12 @@ public class Zona1_7 extends AppCompatActivity {
                 c.setText(getString(respuestas_c[i]));
             }
 
+            btnVideo.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                }
+            });
 
 
             btn.setOnClickListener(new View.OnClickListener() {
@@ -107,21 +114,23 @@ public class Zona1_7 extends AppCompatActivity {
                         }
                     }else{
                         audioFallo.start();
-                        rg.clearCheck();
+                        btn.setEnabled(false);
                         txorimalo.setVisibility(View.VISIBLE);
 
                         setText(getString(R.string.zona1_7_TxorimaloFallo),txtTxorimalo , 65);
+                        audioFallo.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mediaPlayer) {
+                                btn.setEnabled(true);
+                                rg.clearCheck();
+                                txorimalo.setVisibility(View.INVISIBLE);
+                                txtTxorimalo.setText("");
+                            }
+                        });
                     }
                 }
             });
 
-            audioFallo.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                @Override
-                public void onCompletion(MediaPlayer mediaPlayer) {
-                    txorimalo.setVisibility(View.INVISIBLE);
-                    txtTxorimalo.setText("");
-                }
-            });
 
     }
     //Se visualizar el texto palabra por palabra

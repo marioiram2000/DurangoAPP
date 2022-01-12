@@ -7,6 +7,17 @@
     tools:context=".Zona1_7"
     android:background="@color/papiro">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/zona1_7_fbtnVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        android:layout_marginEnd="316dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/movie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/txtZona1_7_Titulo"
         style="@style/title"

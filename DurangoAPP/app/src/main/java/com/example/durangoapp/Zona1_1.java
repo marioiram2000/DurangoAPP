@@ -167,8 +167,6 @@ public class Zona1_1 extends AppCompatActivity {
                 //Audio  segunda parte explicacion iglesia tras el video
                 audio_Txorimalo = MediaPlayer.create(Zona1_1.this,R.raw.zona1_6_txorimalo);
                 audio_Txorimalo.start();
-
-
             }
         });
     }
