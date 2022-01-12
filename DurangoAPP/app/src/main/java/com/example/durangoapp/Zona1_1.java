@@ -4,10 +4,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
-import android.app.Dialog;
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -15,7 +13,6 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.MediaController;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.VideoView;
@@ -107,6 +104,7 @@ public class Zona1_1 extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Zona1_1.this, Zona1_7.class);
                 startActivity(intent);
+                audio_Txorimalo.stop();
             }
         });
 
@@ -119,8 +117,16 @@ public class Zona1_1 extends AppCompatActivity {
 //        dialogVerVideo.setContentView(R.layout.dialog_zona1_4_video);
 //        dialogVerVideo.show();
 
-        Intent intent = new Intent(Zona1_1.this, zona1_4_video.class);
+        Intent intent = new Intent(Zona1_1.this, Zona1_4_video.class);
         startActivityForResult(intent,1244);
+
+
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
 
         btnZona1_1_Video.setVisibility(View.INVISIBLE);
 
@@ -169,12 +175,7 @@ public class Zona1_1 extends AppCompatActivity {
                 audio_Txorimalo.start();
             }
         });
-    }
 
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
     }
 
     //Parar el audio cuando se pulsa el boton back

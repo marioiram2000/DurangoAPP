@@ -3,6 +3,7 @@ package com.example.durangoapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -88,6 +89,9 @@ public class Zona1_7 extends AppCompatActivity {
             btnVideo.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    Intent intent = new Intent(Zona1_7.this, Zona1_4_video.class);
+                    startActivity(intent);
+                    audioFallo.stop();
 
                 }
             });
@@ -133,6 +137,12 @@ public class Zona1_7 extends AppCompatActivity {
 
 
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
+
     //Se visualizar el texto palabra por palabra
     public void setText(final String s, TextView txt, int velocidad)
     {

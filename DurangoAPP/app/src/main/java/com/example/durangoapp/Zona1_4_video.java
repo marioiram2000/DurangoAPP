@@ -2,6 +2,7 @@ package com.example.durangoapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,7 +10,7 @@ import android.view.View;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-public class zona1_4_video extends AppCompatActivity {
+public class Zona1_4_video extends AppCompatActivity {
 
     VideoView video;
 
@@ -35,11 +36,21 @@ public class zona1_4_video extends AppCompatActivity {
         mc.setAnchorView(video);
         video.start();
 
+
+        //Cuando termina el video se cierra la actividad
         video.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
+
+                setResult(RESULT_OK);
                 finish();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        setResult(RESULT_OK);
+        super.onBackPressed();
     }
 }
