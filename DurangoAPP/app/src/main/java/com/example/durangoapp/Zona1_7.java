@@ -56,7 +56,7 @@ public class Zona1_7 extends AppCompatActivity {
             R.id.zona1_7_rdB};
 
     private static int i=0;
-    MediaPlayer audioFallo, audioCompletado;
+    MediaPlayer audioFallo;
     private ImageView txorimalo;
 
     @Override
@@ -106,15 +106,8 @@ public class Zona1_7 extends AppCompatActivity {
                             recreate();
                             rg.clearCheck();
                         }else{
-                            audioCompletado = MediaPlayer.create(Zona1_7.this, R.raw.zona1_7_txorimalo_acierto);
-                            audioCompletado.start();
-                            audioCompletado.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                                @Override
-                                public void onCompletion(MediaPlayer mediaPlayer) {
-                                    finish();
-                                    //Aqui falta dar la letra
-                                }
-                            });
+                            Intent intent = new Intent(Zona1_7.this, Zona1_8.class);
+                            startActivity(intent);
                         }
                     }else{
                         audioFallo.start();

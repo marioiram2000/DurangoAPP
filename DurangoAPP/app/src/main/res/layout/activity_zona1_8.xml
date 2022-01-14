@@ -31,13 +31,12 @@
     <TextView
         android:id="@+id/txtZona1_8_Txorimalo"
         style="@style/normalText"
-        android:layout_width="172dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="64dp"
-        android:text="@string/txtZona1_8_Txorimalo_1"
+        android:layout_width="182dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgZona1_8_Txorimalo"
         app:layout_constraintStart_toEndOf="@+id/imgZona1_8_Txorimalo"
-        app:layout_constraintTop_toBottomOf="@+id/txtZona1_8_Titulo" />
+        app:layout_constraintTop_toTopOf="@+id/imgZona1_8_Txorimalo" />
 
     <ImageView
         android:id="@+id/imgZona1_8_TxorimaloLetraD"
