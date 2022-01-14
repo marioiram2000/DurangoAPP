@@ -28,7 +28,7 @@
             android:name=".Zona1_8"
             android:exported="true" />
         <activity
-            android:name=".zona1_4_video"
+            android:name=".Zona1_4_video"
             android:exported="true" />
         <activity
             android:name=".Desarrollo"
