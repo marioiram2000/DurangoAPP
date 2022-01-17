@@ -60,6 +60,14 @@ public class Desarrollo extends AppCompatActivity {
             }
         });
 
+        Button irZona2 = (Button) findViewById(R.id.btn_Desa_Zona_2);
+        irZona2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Desarrollo.this, Zona2_1.class);
+                startActivity(intent);
+            }
+        });
         Button btnZona3 = findViewById(R.id.btn_Zona3);
         btnZona3.setOnClickListener(new View.OnClickListener() {
             @Override

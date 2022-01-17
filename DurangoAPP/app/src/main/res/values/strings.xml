@@ -29,6 +29,7 @@
     \n5 TEST GALDERA ASMATU BEHAR DITUZUE JAJA!
     \nKapazak izango zarete seguro! Animo! Eman botoiari eta hasi!
     </string>
+    <string name="btnZona1_7_Test">D LETRA LORTU!</string>
     <string name="txtZona1_8_Titulo">ZORIONAK!</string>
     <string name="txtZona1_8_Txorimalo_1">Zorionak! D letra lortu duzue.\nGoazen 2. geralekura!</string>
     <string name="txtZona1_8_LetraD">D _ _ _ _ _ _</string>
@@ -59,19 +60,25 @@
     <string name="zona1_7_TxorimaloFallo">Uiiii... Benga, saiatu \nberriro lortuko duzula!</string>
 
 
-    <!--    Zona2-->
-    <string name="zona2_1_Txorimalo">Kaixo! Ongi etorri bigarren geralekura! Durangoko Kurutziagako gurutzean gaude.</string>
-    <string name="zona2_4_Txorimalo">Ulertu duzue? BAI? Ba aterpetxean asteburu zoragarri bat pasatzeko lortu behar dituzuen letren artean bigarren letra lortu nahi baduzue, hau da; U letra lortu nahi baduzue…
+<!--    Zona2-->
+    <string name="txtZona2_1_Titulo">Kurutziagako Gurutzea</string>
+    <string name="txtZona2_1_Txorimalo">Kaixo! Ongi etorri bigarren geralekura! Durangoko Kurutziagako gurutzean gaude.</string>
+    <string name="txtZona2_4_Txorimalo">Ulertu duzue? BAI? Ba aterpetxean asteburu zoragarri bat pasatzeko lortu behar dituzuen letren artean bigarren letra lortu nahi baduzue, hau da; U letra lortu nahi baduzue…
     HITZ SALDA HONETAN 5 HITZ AURKITU BEHAR DITUZUE JAJA !
     Kapazak izango zarete seguro! Animo! Eman botoiari eta hasi!
     </string>
-    <string name="zona2_3_Txorimalo">Kurutziagako gurutzea, XV. mendearen amaieran eta XVI. mendearen hasiera tartean eginda dago, Nafarroko konkista gertatu zen momentuan. Gurutzea garrantzi handia du gizartean, kulturan eta Erdi Aroko historian.
+    <string name="txtZona2_3_Txorimalo">Kurutziagako gurutzea, XV. mendearen amaieran eta XVI. mendearen hasiera tartean eginda dago, Nafarroko konkista gertatu zen momentuan. Gurutzea garrantzi handia du gizartean, kulturan eta Erdi Aroko historian.
     Kurutziagako Gurutzea, Kurutziaga izeneko santutxo zaharra da. Durangoko alde zaharraren ondoan kokatuta dago, Kurutziaga kalean, Andra Maria elizatik oso hurbil, lorategi baten erdian.
     Monumentu garrantzitsu eta berezia da, hareharriz egindakoa eta 4,30 metroko altuera du. Gurtzeak, istorio bat kontatzen du:
     Behealdetik hasita: fusteak bekatua eta zigorra irudikatzen ditu
     Erdialdean: kapitelak, Eliza eta ebanjelioa adierazten ditu
     Goialdean: gurutzaduran, esperantza irudikatzen da, hau da, barkamenaren eta salbazioaren mezua.
     </string>
+    <string name="btnZona2_5_Sopa">U LETRA LORTU!</string>
+    <string name="txtZona2_6_Titulo">ZORIONAK!</string>
+    <string name="txtZona2_6_Txorimalo_1">Zorionak! U letra lortu duzue.\nGoazen 3. geralekura!</string>
+    <string name="txtZona2_6_LetraU">D U _ _ _ _ _</string>
+
 
 <!--    zona 3-->
     <string name="txtZona3_Titulo">Santa Anako arkua</string>

@@ -153,8 +153,6 @@ public class Zona1_1 extends AppCompatActivity {
         audio_Txorimalo.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
-                //Boton inicio Test Visible
-
 
                 //Texto 4 Txorimalo
                 //txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());

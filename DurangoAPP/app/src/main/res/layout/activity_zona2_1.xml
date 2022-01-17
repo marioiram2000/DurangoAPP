@@ -7,6 +7,77 @@
     tools:context=".Zona2_1"
     android:background="@color/papiro">
 
+    <TextView
+        android:id="@+id/txtZona2_1_Titulo"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txtZona2_1_Titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgZona2_1_Txorimalo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtZona2_1_Titulo"
+        app:srcCompat="@drawable/txorimalo" />
+
+    <ScrollView
+        android:id="@+id/scrollerZona2_1"
+        android:layout_width="227dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toEndOf="@+id/imgZona2_1_Txorimalo"
+        app:layout_constraintTop_toBottomOf="@+id/txtZona2_1_Titulo">
+
+        <TextView
+            android:id="@+id/txtZona2_1_Txorimalo"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="bottom"
+            android:maxLines="5"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtZona2_1_Titulo">
+
+            <requestFocus />
+        </TextView>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imgZona2_2_Cruz"
+        android:layout_width="357dp"
+        android:layout_height="232dp"
+        android:layout_marginTop="220dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtZona2_1_Titulo"
+        app:srcCompat="@drawable/zona2_2_kurutziagako_gurutzea" />
+
+
+    <Button
+        android:id="@+id/btnZona2_5_Sopa"
+        style="@style/buttonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/btnZona2_5_Sopa"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgZona2_2_Cruz" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
