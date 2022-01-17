@@ -68,6 +68,16 @@ public class Desarrollo extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+//        Button irJuego2 = (Button) findViewById(R.id.btn_Desa_Zona_2_Juego);
+//        irJuego2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Desarrollo.this, Zona2_5.class);
+//                startActivity(intent);
+//            }
+//        });
+
         Button btnZona3 = findViewById(R.id.btn_Zona3);
         btnZona3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,6 +86,34 @@ public class Desarrollo extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+//        Button irJuego3 = (Button) findViewById(R.id.btn_Desa_Zona_3_Juego);
+//        irJuego3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Desarrollo.this, Zona3_5.class);
+//                startActivity(intent);
+//            }
+//        });
+
+        Button btnZona4 = findViewById(R.id.btn_Zona4);
+        btnZona4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Desarrollo.this, Zona4_1.class);
+                startActivity(intent);
+            }
+        });
+
+//        Button irJuego4 = (Button) findViewById(R.id.btn_Desa_Zona_4_Juego);
+//        irJuego4.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Desarrollo.this, Zona4_5.class);
+//                startActivity(intent);
+//            }
+//        });
+
         Button btnZona5 = findViewById(R.id.btn_Zona5);
         btnZona5.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,5 +123,59 @@ public class Desarrollo extends AppCompatActivity {
             }
         });
 
+//        Button irJuego5 = (Button) findViewById(R.id.btn_Desa_Zona_5_Juego);
+//        irJuego5.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Desarrollo.this, Zona5_5.class);
+//                startActivity(intent);
+//            }
+//        });
+
+//        Button btnZona6 = findViewById(R.id.btn_Zona6);
+//        btnZona6.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Desarrollo.this, Zona6_1.class);
+//                startActivity(intent);
+//            }
+//        });
+
+//        Button irJuego6 = (Button) findViewById(R.id.btn_Desa_Zona_6_Juego);
+//        irJuego6.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Desarrollo.this, Zona6_5.class);
+//                startActivity(intent);
+//            }
+//        });
+
+//        Button btnZona7 = findViewById(R.id.btn_Zona7);
+//        btnZona7.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Desarrollo.this, Zona7_1.class);
+//                startActivity(intent);
+//            }
+//        });
+
+//        Button irJuego7 = (Button) findViewById(R.id.btn_Desa_Zona_7_Juego);
+//        irJuego7.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Desarrollo.this, Zona7_5.class);
+//                startActivity(intent);
+//            }
+//        });
+
+
+//        Button btnZona8 = findViewById(R.id.btn_Zona8);
+//        btnZona8.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Desarrollo.this, Zona8_1.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 }
