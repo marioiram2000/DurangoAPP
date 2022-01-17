@@ -59,7 +59,7 @@
     <string name="zona1_7_TxorimaloFallo">Uiiii... Benga, saiatu \nberriro lortuko duzula!</string>
 
 
-<!--    Zona2-->
+    <!--    Zona2-->
     <string name="zona2_1_Txorimalo">Kaixo! Ongi etorri bigarren geralekura! Durangoko Kurutziagako gurutzean gaude.</string>
     <string name="zona2_4_Txorimalo">Ulertu duzue? BAI? Ba aterpetxean asteburu zoragarri bat pasatzeko lortu behar dituzuen letren artean bigarren letra lortu nahi baduzue, hau da; U letra lortu nahi baduzue…
     HITZ SALDA HONETAN 5 HITZ AURKITU BEHAR DITUZUE JAJA !
@@ -72,4 +72,20 @@
     Erdialdean: kapitelak, Eliza eta ebanjelioa adierazten ditu
     Goialdean: gurutzaduran, esperantza irudikatzen da, hau da, barkamenaren eta salbazioaren mezua.
     </string>
+
+<!--    zona 3-->
+    <string name="txtZona3_Titulo">Santa Anako arkua</string>
+    <string name="txtZona3_1_Txorimalo">Kaixo! Ongi etorri hirugarren geralekura! Durangoko Santa Anako arkuan gaude. </string>
+    <string name="txtZona3_3_Txorimalo">Santa Anako arkua 1566an eraiki zen, baina 1743an Udalak atea berregitu zuen ate barroko bat eraikiz, eta errenazentista kenduz.
+    Durango herria inguratzen zuen harresi zaharretik geratzen den sarrerako ate bakarra da. Santa Anako plazan dago kokatuta.
+    Luxu handiarekin eraiki zen: bi solairuko arku handi bat.
+    </string>
+    <string name="txtZona3_4_Txorimalo">Ulertu duzue? BAI? Ba aterpetxean asteburu zoragarri bat pasatzeko lortu behar dituzuen artean hirugarren letra lortu nahi baduzue, hau da; R letra lortu nahi baduzue…
+
+    4 ARGAZKI ETA ESALDI LOTU BEHAR DITUZUE JAJA!
+
+    Kapazak izango zarete seguro! Animo! Eman botoiari eta hasi!
+    </string>
+
+
 </resources>

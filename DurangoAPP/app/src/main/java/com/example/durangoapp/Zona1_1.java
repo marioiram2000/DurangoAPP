@@ -63,10 +63,10 @@ public class Zona1_1 extends AppCompatActivity {
                 imgZona1_1_Iglesia.setVisibility(View.VISIBLE);
 
                 //Texto 2 Txorimalo
-                txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
+                //txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
                 txtZona1_1_Txorimalo.setText("");
                 setText(getString(R.string.txtZona1_3_Txorimalo_1), txtZona1_1_Txorimalo,80);
-                final ScrollView scroller01 = (ScrollView) findViewById(R.id.scrollerZona1_1);
+                //final ScrollView scroller01 = (ScrollView) findViewById(R.id.scrollerZona1_1);
                 scroller01.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 
                     @Override
@@ -131,7 +131,7 @@ public class Zona1_1 extends AppCompatActivity {
         btnZona1_1_Video.setVisibility(View.INVISIBLE);
 
         //Texto 3 Txorimalo
-        txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
+        //txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
         txtZona1_1_Txorimalo.setText("");
         setText(getString(R.string.txtZona1_5_Txorimalo_1), txtZona1_1_Txorimalo,65);
         final ScrollView scroller01 = (ScrollView) findViewById(R.id.scrollerZona1_1);
@@ -157,7 +157,7 @@ public class Zona1_1 extends AppCompatActivity {
 
 
                 //Texto 4 Txorimalo
-                txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
+                //txtZona1_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
                 txtZona1_1_Txorimalo.setText("");
                 setText(getString(R.string.txtZona1_6_Txorimalo_1), txtZona1_1_Txorimalo,70);
                 final ScrollView scroller01 = (ScrollView) findViewById(R.id.scrollerZona1_1);
