@@ -4,41 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Zona1_1"
+    tools:context=".Zona7_1"
     android:background="@color/papiro">
 
     <TextView
-        android:id="@+id/txtZona1_1_Titulo"
+        android:id="@+id/txtZona7_1_Titulo"
         style="@style/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/txtZona1_1_Titulo"
+        android:text="@string/txtZona7_Titulo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imgZona1_1_Txorimalo"
+        android:id="@+id/imgZona7_1_Txorimalo"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="28dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtZona1_1_Titulo"
+        app:layout_constraintTop_toBottomOf="@+id/txtZona7_1_Titulo"
         app:srcCompat="@drawable/txorimalo" />
 
     <ScrollView
-        android:id="@+id/scrollerZona1_1"
+        android:id="@+id/scrollerZona7_1"
         android:layout_width="227dp"
         android:layout_height="130dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="36dp"
-        app:layout_constraintStart_toEndOf="@+id/imgZona1_1_Txorimalo"
-        app:layout_constraintTop_toBottomOf="@+id/txtZona1_1_Titulo">
+        app:layout_constraintStart_toEndOf="@+id/imgZona7_1_Txorimalo"
+        app:layout_constraintTop_toBottomOf="@+id/txtZona7_1_Titulo">
 
         <TextView
-            android:id="@+id/txtZona1_1_Txorimalo"
+            android:id="@+id/txtZona7_1_Txorimalo"
             style="@style/normalText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,25 +48,25 @@
             android:maxLines="5"
             android:scrollbars="vertical"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtZona1_1_Titulo">
+            app:layout_constraintTop_toBottomOf="@+id/txtZona7_1_Titulo">
 
             <requestFocus />
         </TextView>
     </ScrollView>
 
     <ImageView
-        android:id="@+id/imgZona1_2_Iglesia"
+        android:id="@+id/imgZona7_2_Teatro"
         android:layout_width="357dp"
         android:layout_height="232dp"
         android:layout_marginTop="220dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtZona1_1_Titulo"
-        app:srcCompat="@drawable/zona1_2_iglesia" />
+        app:layout_constraintTop_toBottomOf="@+id/txtZona7_1_Titulo"
+        app:srcCompat="@drawable/zona7_2_1" />
 
     <Button
-        android:id="@+id/btnZona1_2_Video"
+        android:id="@+id/btnZona7_2_Video"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
@@ -74,20 +74,21 @@
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgZona1_2_Iglesia"
+        app:layout_constraintTop_toBottomOf="@+id/imgZona7_2_Teatro"
         style="@style/buttonText"/>
 
     <Button
-        android:id="@+id/btnZona1_7_Test"
+        android:id="@+id/btnZona7_5_Juego"
         style="@style/buttonText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="@string/btnZona1_7_Test"
+        android:text="@string/btnZona7_5_Juego"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgZona1_2_Iglesia" />
+        app:layout_constraintTop_toBottomOf="@+id/imgZona7_2_Teatro" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

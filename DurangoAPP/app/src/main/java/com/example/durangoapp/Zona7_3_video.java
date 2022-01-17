@@ -9,14 +9,14 @@ import android.view.View;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-public class Zona1_4_video extends AppCompatActivity {
+public class Zona7_3_video extends AppCompatActivity {
 
     VideoView video;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_zona1_4_video);
+        setContentView(R.layout.activity_zona7_3_video);
 
         getSupportActionBar().hide();
 
@@ -26,7 +26,7 @@ public class Zona1_4_video extends AppCompatActivity {
         decorView.setSystemUiVisibility(uiOptions);
 
         String path = "android.resource://" + getPackageName() + "/" + R.raw.zona1_4_video;
-        video = findViewById(R.id.videoViewZona1_4);
+        video = findViewById(R.id.videoViewZona7_3);
         video.setVideoURI(Uri.parse(path));
 
         MediaController mc= new MediaController(this);
@@ -44,6 +44,8 @@ public class Zona1_4_video extends AppCompatActivity {
                 finish();
             }
         });
+
+
     }
 
     @Override

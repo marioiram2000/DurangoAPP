@@ -113,7 +113,7 @@
     <string name="btnZona4_5_Juego">A LETRA LORTU!</string>
     <string name="txtZona4_6_Titulo">ZORIONAK!</string>
     <string name="txtZona4_6_Txorimalo_1">Zorionak! A letra lortu duzue.\nGoazen 5. geralekura!</string>
-    <string name="txtZona4_6_LetraR">D U R A _ _ _</string>
+    <string name="txtZona4_6_LetraA">D U R A _ _ _</string>
 
     <!--    Zona 5-->
     <string name="txtZona5_Titulo">Durangoko Kulturala</string>
@@ -130,7 +130,7 @@
     <string name="btnZona5_5_Juego">N LETRA LORTU!</string>
     <string name="txtZona5_6_Titulo">ZORIONAK!</string>
     <string name="txtZona5_6_Txorimalo_1">Zorionak! N letra lortu duzue.\nGoazen 6. geralekura!</string>
-    <string name="txtZona5_6_LetraR">D U R A N _ _</string>
+    <string name="txtZona5_6_LetraN">D U R A N _ _</string>
 
     <!--    Zona 6-->
     <string name="txtZona6_Titulo">Durangoko Azoka</string>
@@ -147,6 +147,19 @@
     <string name="txtZona6_6_Txorimalo_1">Zorionak! G letra lortu duzue.\nGoazen 7. geralekura!</string>
     <string name="txtZona6_6_LetraG">D U R A N G _</string>
 
+    <!--    Zona 7-->
+    <string name="txtZona7_Titulo">Durangoko Pasioa</string>
+    <string name="txtZona7_1_Txorimalo">Kaixo! Ongi etorri zazpigarren eta azken geralekura! Durangoko San Agustin kultur gunean gaude.</string>
+    <string name="txtZona7_4_Txorimalo">Ulertu duzue? BAI? Ba aterpetxean asteburu zoragarri bat pasatzeko lortu behar dituzuen letren artean azken letra lortu nahi baduzue,hau da; O letra lortu nahi baduzue…
 
+    ESALDIAK HITZEKIN BETE BEHARKO DITUZUE
+
+    Kapazak izango zarete seguro! Animo! Eman botoiari eta hasi!
+    </string>
+
+    <string name="btnZona7_5_Juego">O LETRA LORTU!</string>
+    <string name="txtZona7_6_Titulo">ZORIONAK!</string>
+    <string name="txtZona7_6_Txorimalo_1">Zorionak! O letra lortu duzue!</string>
+    <string name="txtZona7_6_LetraG">D U R A N G O</string>
 
 </resources>

@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Zona1_4_video">
+    tools:context=".Zona7_3_video">
 
     <VideoView
-        android:id="@+id/videoViewZona1_4"
+        android:id="@+id/videoViewZona7_3"
         android:layout_width="640dp"
         android:layout_height="400dp"
         android:layout_centerInParent="true"
