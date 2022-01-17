@@ -61,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="12dp"
-        android:text="Button"
+        android:text="zona 2"
         app:layout_constraintStart_toEndOf="@+id/btn_Desa_mapa"
         app:layout_constraintTop_toBottomOf="@+id/btn_Desa_Zona_1_Test" />
 
@@ -69,6 +69,8 @@
         android:id="@+id/btn_Zona3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="zona 3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnVideo_desa" />
