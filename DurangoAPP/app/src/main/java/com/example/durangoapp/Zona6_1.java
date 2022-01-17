@@ -17,26 +17,25 @@ import android.widget.TextView;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Zona5_1 extends AppCompatActivity {
-
+public class Zona6_1 extends AppCompatActivity {
 
     private MediaPlayer audio_Txorimalo;
-    private ImageView imgZona5_2_kulturala;
-    private Button btnZona5_5_Juego;
-    private TextView txtZona5_1_Txorimalo;
+    private ImageView imgZona6_2_kulturala;
+    private Button btnZona6_5_Juego;
+    private TextView txtZona6_1_Txorimalo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_zona5_1);
-        imgZona5_2_kulturala = findViewById(R.id.imgZona5_2_durangoko_kulturala);
-        btnZona5_5_Juego = findViewById(R.id.btnZona5_5_Juego);
-        txtZona5_1_Txorimalo = findViewById(R.id.txtZona5_1_Txorimalo);
-        final ScrollView scroller = findViewById(R.id.scrollerZona5_1);
+        setContentView(R.layout.activity_zona6_1);
+        imgZona6_2_kulturala = findViewById(R.id.imgZona6_2_durangoko_azoka);
+        btnZona6_5_Juego = findViewById(R.id.btnZona6_5_Juego);
+        txtZona6_1_Txorimalo = findViewById(R.id.txtZona6_1_Txorimalo);
+        final ScrollView scroller = findViewById(R.id.scrollerZona6_1);
 
         //Texto 1 Txorimalo
-        txtZona5_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
-        setText(getString(R.string.txtZona5_1_Txorimalo), txtZona5_1_Txorimalo, 60 );
+        txtZona6_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
+        setText(getString(R.string.txtZona6_1_Txorimalo), txtZona6_1_Txorimalo, 60 );
         scroller.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean hasFocus) {
@@ -46,34 +45,34 @@ public class Zona5_1 extends AppCompatActivity {
             }
         });
         //Audio Txorimalo
-        audio_Txorimalo = MediaPlayer.create(Zona5_1.this, R.raw.zona5_1_txorimalo);
+        audio_Txorimalo = MediaPlayer.create(Zona6_1.this, R.raw.zona6_1_txorimalo);
         audio_Txorimalo.start();
 
         //Cuando termina aparece la foto
         audio_Txorimalo.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
-                imgZona5_2_kulturala.setVisibility(View.VISIBLE);
+                imgZona6_2_kulturala.setVisibility(View.VISIBLE);
 
                 //Texto 2 Txorimalo
 
-                txtZona5_1_Txorimalo.setText("");
-                setText(getString(R.string.txtZona5_3_Txorimalo), txtZona5_1_Txorimalo, 60);
+                txtZona6_1_Txorimalo.setText("");
+                setText(getString(R.string.txtZona6_3_Txorimalo), txtZona6_1_Txorimalo, 60);
 
                 //Audio explicacion 2
-                audio_Txorimalo = MediaPlayer.create(Zona5_1.this,R.raw.zona5_3_txorimalo);
+                audio_Txorimalo = MediaPlayer.create(Zona6_1.this,R.raw.zona6_3_txorimalo);
                 audio_Txorimalo.start();
 
                 audio_Txorimalo.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
                     public void onCompletion(MediaPlayer mediaPlayer) {
-                        btnZona5_5_Juego.setVisibility(View.VISIBLE);
+                        btnZona6_5_Juego.setVisibility(View.VISIBLE);
 
                         //texto 3 txorimalo
-                        txtZona5_1_Txorimalo.setText("");
-                        setText(getString(R.string.txtZona5_4_Txorimalo), txtZona5_1_Txorimalo, 70);
+                        txtZona6_1_Txorimalo.setText("");
+                        setText(getString(R.string.txtZona6_4_Txorimalo), txtZona6_1_Txorimalo, 70);
 
-                        audio_Txorimalo = MediaPlayer.create(Zona5_1.this,R.raw.zona5_4_txorimalo);
+                        audio_Txorimalo = MediaPlayer.create(Zona6_1.this,R.raw.hamilton_placeholder);
                         audio_Txorimalo.start();
 
                     }

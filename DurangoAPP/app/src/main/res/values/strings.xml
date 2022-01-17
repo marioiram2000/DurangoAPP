@@ -133,20 +133,18 @@
     <string name="txtZona5_6_LetraR">D U R A N _ _</string>
 
     <!--    Zona 6-->
-    <string name="txtZona6_Titulo">Durangoko Kulturala</string>
-    <string name="txtZona6_1_Txorimalo">Kaixo! Ongi etorri bostgarren geralekura!  Tabiran gaude, Durangoko Kulturala futbol taldea jolasten duen zelaian.</string>
-    <string name="txtZona6_3_Txorimalo">Durangoko Kulturala, 1919. urtean sortu zen, gripe Espainiarraren pandemia gertatu zen momentuan. Durangoko Kulturala, Durangon dagoen futbol talde ofiziala da, gaur egun hirugarren mailan jokatzen duena. Durangoko kirol lagun talde batzuen lanari esker. Taldeko kideak futbolzaleak ziren, eta haien futbolean jokatzeko irrikari esker, haien artean jokatzetik talde handi eta goraipatu bat eratzera heldu ziren.
-    Haien jokalekua aldatuz joan da, lehen Ezkurdin kokatuta zegoen, geroago San Fauston, eta orain Tabiran. Gaur egun, hirugarren mailan jokatzen duen talde bat da, eta taldearen adin aniztasunari esker (jubenilak, kadeteak, infantilak…), nahiz txikia nahiz nagusia izan, talde honetan jokatzeko aukera izan dezakezu.
+    <string name="txtZona6_Titulo">Durangoko Azoka</string>
+    <string name="txtZona6_1_Txorimalo">Kaixo! Ongi etorri seigarren geralekura! Durangoko Azokan gaude.</string>
+    <string name="txtZona6_3_Txorimalo">Euskal Liburu eta Disko Azoka, Durangon urtero, abenduaren lehenengo hamabostaldian, ospatzen den Euskal Herriko azokarik handiena eta garrantzitsuena da.
+    Aipatzekoa da, 1965eko azaroaren 1ean, lehen edizioa antolatu zutela Durangon, Andra Mariaren basilikako arkupean.
+    Normalean Euskal Herri osoko argitaletxeak batzen dira azokan, han bere liburuak eta diskoak saltzeko asmoz. Saltzen diren liburuak eta diskoak nobedadeak zein aurreko urteetan argitaratutakoak izan ohi dira.
+    Amaitzeko, esan behar dugu Durangoko Euskal Liburu eta Disko Azoka euskararen eta euskarazko kulturaren erakustoki erraldoi eta jai nagusi bihurtzen dela.
     </string>
-    <string name="txtZona6_4_Txorimalo">Ulertu duzue? BAI? Ba aterpetxean asteburu zoragarri bat pasatzeko lortu behar dituzuen letren artean bosgarren letra lortu nahi baduzue, hau da; N letra lortu nahi baduzue…
+    <string name="txtZona6_4_Txorimalo">How does a ragtag volunteer army in need of a showerSomehow defeat a global superpower?How do we emerge victorious from the quagmire?Leave the battlefield waving Betsy Ross</string>
 
-    PUZZLE HAU BETE BEHAR DUZUE JAJA !
-
-    Kapazak izango zarete seguro! Animo! Eman botoiari eta hasi!
-    </string>
     <string name="btnZona6_5_Juego">G LETRA LORTU!</string>
     <string name="txtZona6_6_Titulo">ZORIONAK!</string>
     <string name="txtZona6_6_Txorimalo_1">Zorionak! G letra lortu duzue.\nGoazen 7. geralekura!</string>
-    <string name="txtZona6_6_LetraR">D U R A N G _</string>
+    <string name="txtZona6_6_LetraG">D U R A N G _</string>
 
 </resources>

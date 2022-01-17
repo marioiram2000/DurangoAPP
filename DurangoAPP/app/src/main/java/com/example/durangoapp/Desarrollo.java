@@ -132,14 +132,14 @@ public class Desarrollo extends AppCompatActivity {
 //            }
 //        });
 
-//        Button btnZona6 = findViewById(R.id.btn_Zona6);
-//        btnZona6.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(Desarrollo.this, Zona6_1.class);
-//                startActivity(intent);
-//            }
-//        });
+        Button btnZona6 = findViewById(R.id.btn_Zona6);
+        btnZona6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Desarrollo.this, Zona6_1.class);
+                startActivity(intent);
+            }
+        });
 
 //        Button irJuego6 = (Button) findViewById(R.id.btn_Desa_Zona_6_Juego);
 //        irJuego6.setOnClickListener(new View.OnClickListener() {
