@@ -98,6 +98,7 @@
     <string name="txtZona3_6_Titulo">ZORIONAK!</string>
     <string name="txtZona3_6_Txorimalo_1">Zorionak! R letra lortu duzue.\nGoazen 4. geralekura!</string>
     <string name="txtZona3_6_LetraR">D U R _ _ _ _</string>
+
     <!--    Zona 4-->
     <string name="txtZona4_Titulo">Durangoko Udala</string>
     <string name="txtZona4_1_Txorimalo">Kaixo! Ongi etorri laugarren geralekura! Durangoko Udalean gaude.</string>
@@ -109,6 +110,10 @@
     
     Kapazak izango zarete seguro! Animo! Eman botoiari eta hasi!
     </string>
+    <string name="btnZona4_5_Juego">A LETRA LORTU!</string>
+    <string name="txtZona4_6_Titulo">ZORIONAK!</string>
+    <string name="txtZona4_6_Txorimalo_1">Zorionak! A letra lortu duzue.\nGoazen 5. geralekura!</string>
+    <string name="txtZona4_6_LetraR">D U R A _ _ _</string>
 
     <!--    Zona 5-->
     <string name="txtZona5_Titulo">Durangoko Kulturala</string>
@@ -122,5 +127,9 @@
 
     Kapazak izango zarete seguro! Animo! Eman botoiari eta hasi!
     </string>
+    <string name="btnZona5_5_Juego">N LETRA LORTU!</string>
+    <string name="txtZona5_6_Titulo">ZORIONAK!</string>
+    <string name="txtZona5_6_Txorimalo_1">Zorionak! N letra lortu duzue.\nGoazen 6. geralekura!</string>
+    <string name="txtZona5_6_LetraR">D U R _ _ _ _</string>
 
 </resources>
