@@ -31,6 +31,9 @@
             android:name=".Zona2_6"
             android:exported="true" />
         <activity
+            android:name=".Zona5_1"
+            android:exported="true" />
+        <activity
             android:name=".Zona3_1"
             android:exported="true" />
         <activity

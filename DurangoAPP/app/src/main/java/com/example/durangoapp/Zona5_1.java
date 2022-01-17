@@ -17,26 +17,26 @@ import android.widget.TextView;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Zona3_1 extends AppCompatActivity {
+public class Zona5_1 extends AppCompatActivity {
+
 
     private MediaPlayer audio_Txorimalo;
-    private ImageView imgZona3_2_arkua;
-    private Button btnZona3_5_Juego;
-    private TextView txtZona3_1_Txorimalo;
+    private ImageView imgZona5_2_kulturala;
+    private Button btnZona5_5_Juego;
+    private TextView txtZona5_1_Txorimalo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_zona3_1);
-
-        imgZona3_2_arkua = findViewById(R.id.imgZona3_2_Arkua);
-        btnZona3_5_Juego = findViewById(R.id.btnZona3_5_Juego);
-        txtZona3_1_Txorimalo = findViewById(R.id.txtZona3_1_Txorimalo);
-        final ScrollView scroller = findViewById(R.id.scrollerZona3_1);
+        setContentView(R.layout.activity_zona5_1);
+        imgZona5_2_kulturala = findViewById(R.id.imgZona5_2_durangoko_kulturala);
+        btnZona5_5_Juego = findViewById(R.id.btnZona5_5_Juego);
+        txtZona5_1_Txorimalo = findViewById(R.id.txtZona5_1_Txorimalo);
+        final ScrollView scroller = findViewById(R.id.scrollerZona5_1);
 
         //Texto 1 Txorimalo
-        txtZona3_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
-        setText(getString(R.string.txtZona3_1_Txorimalo), txtZona3_1_Txorimalo, 60 );
+        txtZona5_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
+        setText(getString(R.string.txtZona5_1_Txorimalo), txtZona5_1_Txorimalo, 60 );
         scroller.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean hasFocus) {
@@ -46,34 +46,34 @@ public class Zona3_1 extends AppCompatActivity {
             }
         });
         //Audio Txorimalo
-        audio_Txorimalo = MediaPlayer.create(Zona3_1.this, R.raw.zona3_1_txorimalo);
+        audio_Txorimalo = MediaPlayer.create(Zona5_1.this, R.raw.zona5_1_txorimalo);
         audio_Txorimalo.start();
 
         //Cuando termina aparece la foto
         audio_Txorimalo.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
-                imgZona3_2_arkua.setVisibility(View.VISIBLE);
+                imgZona5_2_kulturala.setVisibility(View.VISIBLE);
 
                 //Texto 2 Txorimalo
 
-                txtZona3_1_Txorimalo.setText("");
-                setText(getString(R.string.txtZona3_3_Txorimalo), txtZona3_1_Txorimalo, 60);
+                txtZona5_1_Txorimalo.setText("");
+                setText(getString(R.string.txtZona5_3_Txorimalo), txtZona5_1_Txorimalo, 60);
 
                 //Audio explicacion 2
-                audio_Txorimalo = MediaPlayer.create(Zona3_1.this,R.raw.zona3_3_txorimalo);
+                audio_Txorimalo = MediaPlayer.create(Zona5_1.this,R.raw.zona5_3_txorimalo);
                 audio_Txorimalo.start();
 
                 audio_Txorimalo.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
                     public void onCompletion(MediaPlayer mediaPlayer) {
-                        btnZona3_5_Juego.setVisibility(View.VISIBLE);
+                        btnZona5_5_Juego.setVisibility(View.VISIBLE);
 
                         //texto 3 txorimalo
-                        txtZona3_1_Txorimalo.setText("");
-                        setText(getString(R.string.txtZona3_4_Txorimalo), txtZona3_1_Txorimalo, 60);
+                        txtZona5_1_Txorimalo.setText("");
+                        setText(getString(R.string.txtZona3_4_Txorimalo), txtZona5_1_Txorimalo, 70);
 
-                        audio_Txorimalo = MediaPlayer.create(Zona3_1.this,R.raw.zona3_4_txorimalo);
+                        audio_Txorimalo = MediaPlayer.create(Zona5_1.this,R.raw.zona5_4_txorimalo);
                         audio_Txorimalo.start();
 
                     }

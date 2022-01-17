@@ -76,6 +76,14 @@ public class Desarrollo extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btnZona5 = findViewById(R.id.btn_Zona5);
+        btnZona5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Desarrollo.this, Zona5_1.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
