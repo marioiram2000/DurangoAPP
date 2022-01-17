@@ -19,9 +19,9 @@ import java.util.TimerTask;
 
 public class Zona2_1 extends AppCompatActivity {
 
-    private ImageView imgZona2_1_Txorimalo, imgZona2_2_Cruz;
+    private ImageView imgZona2_2_Cruz;
     private TextView txtZona2_1_Txorimalo;
-    private Button btnZona2_5_Sopa;
+    private Button btnZona2_5_Juego;
     private MediaPlayer audio_Txorimalo;
 
     @Override
@@ -31,7 +31,7 @@ public class Zona2_1 extends AppCompatActivity {
 
         imgZona2_2_Cruz = findViewById(R.id.imgZona2_2_Cruz);
         txtZona2_1_Txorimalo = findViewById(R.id.txtZona2_1_Txorimalo);
-        btnZona2_5_Sopa = findViewById(R.id.btnZona2_5_Sopa);
+        btnZona2_5_Juego = findViewById(R.id.btnZona2_5_Sopa);
 
         //Texto 1 Txorimalo
         txtZona2_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
@@ -78,7 +78,7 @@ public class Zona2_1 extends AppCompatActivity {
                 audio_Txorimalo.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
                     public void onCompletion(MediaPlayer mediaPlayer) {
-                        btnZona2_5_Sopa.setVisibility(View.VISIBLE);
+                        btnZona2_5_Juego.setVisibility(View.VISIBLE);
 
                         //Texto 4 Txorimalo
                         txtZona2_1_Txorimalo.setMovementMethod(new ScrollingMovementMethod());
