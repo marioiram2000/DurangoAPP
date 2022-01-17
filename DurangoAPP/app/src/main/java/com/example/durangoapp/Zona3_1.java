@@ -60,15 +60,7 @@ public class Zona3_1 extends AppCompatActivity {
 
                 txtZona3_1_Txorimalo.setText("");
                 setText(getString(R.string.txtZona3_3_Txorimalo), txtZona3_1_Txorimalo, 60);
-//                scroller.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-//
-//                    @Override
-//                    public void onFocusChange(View v, boolean hasFocus) {
-//                        if (hasFocus) {
-//                            scroller.fullScroll(View.FOCUS_DOWN);
-//                        }
-//                    }
-//                });
+
                 //Audio explicacion 2
                 audio_Txorimalo = MediaPlayer.create(Zona3_1.this,R.raw.zona3_3_txorimalo);
                 audio_Txorimalo.start();
@@ -84,7 +76,6 @@ public class Zona3_1 extends AppCompatActivity {
 
                         audio_Txorimalo = MediaPlayer.create(Zona3_1.this,R.raw.zona3_3_txorimalo);
                         audio_Txorimalo.start();
-
 
                     }
                 });

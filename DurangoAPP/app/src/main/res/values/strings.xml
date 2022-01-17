@@ -60,7 +60,7 @@
     <string name="zona1_7_TxorimaloFallo">Uiiii... Benga, saiatu \nberriro lortuko duzula!</string>
 
 
-<!--    Zona2-->
+    <!--    Zona2-->
     <string name="txtZona2_1_Titulo">Kurutziagako Gurutzea</string>
     <string name="txtZona2_1_Txorimalo">Kaixo! Ongi etorri bigarren geralekura! Durangoko Kurutziagako gurutzean gaude.</string>
     <string name="txtZona2_4_Txorimalo">Ulertu duzue? BAI? Ba aterpetxean asteburu zoragarri bat pasatzeko lortu behar dituzuen letren artean bigarren letra lortu nahi baduzue, hau da; U letra lortu nahi baduzue…
@@ -80,7 +80,7 @@
     <string name="txtZona2_6_LetraU">D U _ _ _ _ _</string>
 
 
-<!--    zona 3-->
+    <!--    zona 3-->
     <string name="txtZona3_Titulo">Santa Anako arkua</string>
     <string name="txtZona3_1_Txorimalo">Kaixo! Ongi etorri hirugarren geralekura! Durangoko Santa Anako arkuan gaude. </string>
     <string name="txtZona3_3_Txorimalo">Santa Anako arkua 1566an eraiki zen, baina 1743an Udalak atea berregitu zuen ate barroko bat eraikiz, eta errenazentista kenduz.
@@ -94,5 +94,29 @@
     Kapazak izango zarete seguro! Animo! Eman botoiari eta hasi!
     </string>
 
+    <!--    Zona 4-->
+    <string name="txtZona4_Titulo">Durangoko Udala</string>
+    <string name="txtZona4_1_Txorimalo">Kaixo! Ongi etorri laugarren geralekura! Durangoko Udalean gaude.</string>
+    <string name="txtZona4_3_Txorimalo">Durangoko udala eraikin apaintasun ederra duen eraikin bat da. Duela denbora asko eraiki egin zen, XVI. mendean, hala ere, 1973an gerra zibileko bonbardaketaren ondorioz, kaltetu egin zenez, berriro egin behar izan zuten.
+    Eraikin honen elementu zoragarrienak fatxada nagusian daude, hau da, aurreko aldean.  Beheko solairuan erdi-puntuko zazpi arku dituen atari zoragarri bat dago eta lehen solairuan balkoi handi bat dago. Erdikoa nabarmentzen da, Durangoko armarria dagoen frontoi triangeluar bat dago.</string>
+    <string name="txtZona4_4_Txorimalo">Ulertu duzue? BAI? Ba aterpetxean asteburu zoragarri bat pasatzeko lortu behar dituzuen letren artean laugarren letra lortu nahi baduzue, hau da; A letra lortu nahi baduzue…
+
+    GURUTZEGRAMA BAT EGIN BEHARKO DUZUE!
+    
+    Kapazak izango zarete seguro! Animo! Eman botoiari eta hasi!
+    </string>
+
+    <!--    Zona 5-->
+    <string name="txtZona5_Titulo">Durangoko Kulturala</string>
+    <string name="txtZona5_1_Txorimalo">Kaixo! Ongi etorri bostgarren geralekura!  Tabiran gaude, Durangoko Kulturala futbol taldea jolasten duen zelaian.</string>
+    <string name="txtZona5_3_Txorimalo">Durangoko Kulturala, 1919. urtean sortu zen, gripe Espainiarraren pandemia gertatu zen momentuan. Durangoko Kulturala, Durangon dagoen futbol talde ofiziala da, gaur egun hirugarren mailan jokatzen duena. Durangoko kirol lagun talde batzuen lanari esker. Taldeko kideak futbolzaleak ziren, eta haien futbolean jokatzeko irrikari esker, haien artean jokatzetik talde handi eta goraipatu bat eratzera heldu ziren.
+    Haien jokalekua aldatuz joan da, lehen Ezkurdin kokatuta zegoen, geroago San Fauston, eta orain Tabiran. Gaur egun, hirugarren mailan jokatzen duen talde bat da, eta taldearen adin aniztasunari esker (jubenilak, kadeteak, infantilak…), nahiz txikia nahiz nagusia izan, talde honetan jokatzeko aukera izan dezakezu.
+    </string>
+    <string name="txtZona5_4_Txorimalo">Ulertu duzue? BAI? Ba aterpetxean asteburu zoragarri bat pasatzeko lortu behar dituzuen letren artean bosgarren letra lortu nahi baduzue, hau da; N letra lortu nahi baduzue…
+
+    PUZZLE HAU BETE BEHAR DUZUE JAJA !
+
+    Kapazak izango zarete seguro! Animo! Eman botoiari eta hasi!
+    </string>
 
 </resources>
