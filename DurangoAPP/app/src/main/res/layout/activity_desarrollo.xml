@@ -70,7 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="280dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="96dp"
         android:text="zona 5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnVideo_desa" />
@@ -150,9 +150,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
+        android:layout_marginTop="23dp"
         android:text="Juego6"
         app:layout_constraintStart_toEndOf="@+id/btn_Zona6"
-        tools:layout_editor_absoluteY="323dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_Zona5" />
 
     <Button
         android:id="@+id/btn_Zona7"
