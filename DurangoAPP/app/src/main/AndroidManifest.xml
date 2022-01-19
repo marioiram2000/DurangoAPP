@@ -22,9 +22,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DurangoAPP">
         <activity
-            android:name=".Zona7_3_video"
-            android:exported="true" />
-        <activity
             android:name=".Zona7_1"
             android:exported="true" />
         <activity

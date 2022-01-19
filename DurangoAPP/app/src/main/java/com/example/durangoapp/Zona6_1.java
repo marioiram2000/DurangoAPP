@@ -72,7 +72,7 @@ public class Zona6_1 extends AppCompatActivity {
                         txtZona6_1_Txorimalo.setText("");
                         setText(getString(R.string.txtZona6_4_Txorimalo), txtZona6_1_Txorimalo, 70);
 
-                        audio_Txorimalo = MediaPlayer.create(Zona6_1.this,R.raw.hamilton_placeholder);
+                        audio_Txorimalo = MediaPlayer.create(Zona6_1.this,R.raw.zona6_4_txorimalo);
                         audio_Txorimalo.start();
 
                     }
