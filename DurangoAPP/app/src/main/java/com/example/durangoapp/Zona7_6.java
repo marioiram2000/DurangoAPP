@@ -12,19 +12,19 @@ import android.widget.TextView;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Zona3_6 extends AppCompatActivity {
+public class Zona7_6 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_zona3_6);
+        setContentView(R.layout.activity_zona7_6);
 
         MediaPlayer audioCompletado;
-        TextView txtTxorimalo = findViewById(R.id.txtZona3_6_Txorimalo);
+        TextView txtTxorimalo = findViewById(R.id.txtZona7_6_Txorimalo);
 
-        audioCompletado = MediaPlayer.create(Zona3_6.this, R.raw.zona3_5_txorimalo_acierto);
+        audioCompletado = MediaPlayer.create(Zona7_6.this, R.raw.zona7_5_txorimalo_acierto);
         audioCompletado.start();
-        setText(getString(R.string.txtZona3_6_Txorimalo_1),txtTxorimalo , 65);
+        setText(getString(R.string.txtZona7_6_Txorimalo_1),txtTxorimalo , 65);
         audioCompletado.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
@@ -64,5 +64,4 @@ public class Zona3_6 extends AppCompatActivity {
         };
         timer.schedule(taskEverySplitSecond, 1, velocidad);
     }
-
 }
