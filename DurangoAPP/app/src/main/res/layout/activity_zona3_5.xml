@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/com.example.durangoapp"
+    app:layout_width="match_parent"
+    app:layout_height="match_parent"
+    app:background="@color/papiro">
+
+    <com.example.durangoapp.charting.DrawView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtZona3_5_Titulo"
+                style="@style/title"
+                android:layout_width="347dp"
+                android:layout_height="92dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:text="@string/txtZona3_5_Titulo"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgZona3_5_Lugar1"
+                android:layout_width="160dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="@+id/txtZona3_5_Titulo"
+                app:layout_constraintTop_toBottomOf="@+id/txtZona3_5_Titulo"
+                app:srcCompat="@drawable/unirfoto1" />
+
+            <ImageView
+                android:id="@+id/imgZona3_5_Lugar2"
+                android:layout_width="160dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="@+id/imgZona3_5_Lugar1"
+                app:layout_constraintTop_toBottomOf="@+id/imgZona3_5_Lugar1"
+                app:srcCompat="@drawable/unirfoto2" />
+
+            <ImageView
+                android:id="@+id/imgZona3_5_Lugar3"
+                android:layout_width="160dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="@+id/imgZona3_5_Lugar2"
+                app:layout_constraintTop_toBottomOf="@+id/imgZona3_5_Lugar2"
+                app:srcCompat="@drawable/unirfoto3" />
+
+            <ImageView
+                android:id="@+id/imgZona3_5_Lugar4"
+                android:layout_width="160dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="@+id/imgZona3_5_Lugar3"
+                app:layout_constraintTop_toBottomOf="@+id/imgZona3_5_Lugar3"
+                app:srcCompat="@drawable/unirfoto4" />
+
+            <TextView
+                android:id="@+id/txtZona3_5_Lugar1"
+                android:layout_width="100dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center_vertical"
+                android:text="@string/txtZona3_5_Frase_1"
+                style="@style/normalTextSmall"
+                app:layout_constraintEnd_toEndOf="@+id/txtZona3_5_Titulo"
+                app:layout_constraintTop_toBottomOf="@+id/txtZona3_5_Titulo" />
+
+            <TextView
+                android:id="@+id/txtZona3_5_Lugar2"
+                style="@style/normalTextSmall"
+                android:layout_width="100dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/txtZona3_5_Frase_2"
+
+                app:layout_constraintEnd_toEndOf="@+id/txtZona3_5_Lugar1"
+                app:layout_constraintTop_toBottomOf="@+id/txtZona3_5_Lugar1" />
+
+            <TextView
+                android:id="@+id/txtZona3_5_Lugar3"
+                style="@style/normalTextSmall"
+                android:layout_width="100dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/txtZona3_5_Frase_3"
+                app:layout_constraintEnd_toEndOf="@+id/txtZona3_5_Lugar2"
+                app:layout_constraintTop_toBottomOf="@+id/txtZona3_5_Lugar2" />
+
+            <TextView
+                android:id="@+id/txtZona3_5_Lugar4"
+                style="@style/normalTextSmall"
+                android:layout_width="100dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/txtZona3_5_Frase_4"
+                app:layout_constraintEnd_toEndOf="@+id/txtZona3_5_Lugar3"
+                app:layout_constraintTop_toBottomOf="@+id/txtZona3_5_Lugar3" />
+
+    </com.example.durangoapp.charting.DrawView>
+
+<!--    <TextView-->
+<!--        android:id="@+id/txtZona3_5_Titulo"-->
+<!--        style="@style/title"-->
+<!--        android:layout_width="347dp"-->
+<!--        android:layout_height="92dp"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:text="@string/txtZona3_5_Titulo"-->
+<!--        android:textAlignment="center"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgZona3_5_Lugar1"-->
+<!--        android:layout_width="160dp"-->
+<!--        android:layout_height="115dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/txtZona3_5_Titulo"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txtZona3_5_Titulo"-->
+<!--        app:srcCompat="@drawable/unirfoto1" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgZona3_5_Lugar2"-->
+<!--        android:layout_width="160dp"-->
+<!--        android:layout_height="115dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/imgZona3_5_Lugar1"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imgZona3_5_Lugar1"-->
+<!--        app:srcCompat="@drawable/unirfoto2" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgZona3_5_Lugar3"-->
+<!--        android:layout_width="160dp"-->
+<!--        android:layout_height="115dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/imgZona3_5_Lugar2"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imgZona3_5_Lugar2"-->
+<!--        app:srcCompat="@drawable/unirfoto3" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgZona3_5_Lugar4"-->
+<!--        android:layout_width="160dp"-->
+<!--        android:layout_height="115dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/imgZona3_5_Lugar3"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imgZona3_5_Lugar3"-->
+<!--        app:srcCompat="@drawable/unirfoto4" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txtZona3_5_Lugar1"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="115dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:text="@string/txtZona3_5_Frase_1"-->
+<!--        style="@style/normalTextSmall"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/txtZona3_5_Titulo"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txtZona3_5_Titulo" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txtZona3_5_Lugar2"-->
+<!--        style="@style/normalTextSmall"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="115dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:text="@string/txtZona3_5_Frase_2"-->
+
+<!--        app:layout_constraintEnd_toEndOf="@+id/txtZona3_5_Lugar1"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txtZona3_5_Lugar1" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txtZona3_5_Lugar3"-->
+<!--        style="@style/normalTextSmall"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="115dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:text="@string/txtZona3_5_Frase_3"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/txtZona3_5_Lugar2"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txtZona3_5_Lugar2" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txtZona3_5_Lugar4"-->
+<!--        style="@style/normalTextSmall"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="115dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:text="@string/txtZona3_5_Frase_4"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/txtZona3_5_Lugar3"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txtZona3_5_Lugar3" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

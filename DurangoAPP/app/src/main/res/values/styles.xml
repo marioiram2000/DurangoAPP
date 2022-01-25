@@ -5,6 +5,11 @@
         <item name="android:textSize">22dp</item>
         <item name="android:textColor">@color/darkWine</item>
     </style>
+    <style name="normalTextSmall">
+        <item name="android:fontFamily">@font/balsamiqsans</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/darkWine</item>
+    </style>
     <style name="title">
         <item name="android:fontFamily">@font/balsamiqsans</item>
         <item name="android:textSize">30dp</item>

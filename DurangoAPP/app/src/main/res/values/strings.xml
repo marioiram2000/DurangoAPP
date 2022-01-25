@@ -80,7 +80,7 @@
     <string name="txtZona2_6_LetraU">D U _ _ _ _ _</string>
 
 
-    <!--    zona 3-->
+    <!--    Zona 3-->
     <string name="txtZona3_Titulo">Santa Anako arkua</string>
     <string name="txtZona3_1_Txorimalo">Kaixo! Ongi etorri hirugarren geralekura! Durangoko Santa Anako arkuan gaude. </string>
     <string name="txtZona3_3_Txorimalo">Santa Anako arkua 1566an eraiki zen, baina 1743an Udalak atea berregitu zuen ate barroko bat eraikiz, eta errenazentista kenduz.
@@ -98,6 +98,14 @@
     <string name="txtZona3_6_Titulo">ZORIONAK!</string>
     <string name="txtZona3_6_Txorimalo_1">Zorionak! R letra lortu duzue.\nGoazen 4. geralekura!</string>
     <string name="txtZona3_6_LetraR">D U R _ _ _ _</string>
+
+    <!--Juego Zona 3    -->
+    <string name="txtZona3_5_Titulo">LOTU TESTUAK ETA IMAGINAK</string>
+    <string name="txtZona3_5_Frase_1">SANTA ANAKO ARKUA KOKATUTA DAGOEN PLAZA</string>
+    <string name="txtZona3_5_Frase_2">SANTA ANAKO ARKUA GAUR EGUN</string>
+    <string name="txtZona3_5_Frase_3">SANTA ANAKO ARKUA ANTZINEAN</string>
+    <string name="txtZona3_5_Frase_4">SANTA ANAKO ARKUA KOKATUTA DAGOEN HIRIA</string>
+
 
     <!--    Zona 4-->
     <string name="txtZona4_Titulo">Durangoko Udala</string>
