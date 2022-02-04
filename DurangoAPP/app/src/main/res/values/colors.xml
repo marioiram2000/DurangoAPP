@@ -13,4 +13,5 @@
     <color name="darkWine">#2e0011</color>
     <color name="lightestWine">#ffc7dc</color>
     <color name="papiro">#ffeacf</color>
+    <color name="transparente">#00000000</color>
 </resources>

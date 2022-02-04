@@ -34,6 +34,8 @@
         <entry key="app/src/main/res/layout/dialog_crear_grupo.xml" value="0.5" />
         <entry key="app/src/main/res/layout/dialog_elegir_grupo.xml" value="0.5" />
         <entry key="app/src/main/res/layout/dialog_zona1_4_video.xml" value="0.25" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.289" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.289" />
       </map>
     </option>
   </component>
