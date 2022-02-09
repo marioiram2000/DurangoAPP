@@ -2,12 +2,16 @@ package com.example.durangoapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
+import android.view.View;
 import android.widget.TextView;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -28,10 +32,22 @@ public class Zona7_6 extends AppCompatActivity {
         audioCompletado.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
-                finish();
+                //finish();
                 //Aqui falta dar la letra
             }
         });
+
+        //Boton para volver al mapa
+        FloatingActionButton btn= findViewById(R.id.zona7_6_fbtn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Zona7_6.this, Zona8_1.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 
     //Se visualizar el texto palabra por palabra

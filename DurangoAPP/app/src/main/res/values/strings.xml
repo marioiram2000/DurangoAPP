@@ -181,4 +181,10 @@
     <string name="txtZona7_6_Txorimalo_1">Zorionak! O letra lortu duzue!</string>
     <string name="txtZona7_6_LetraO">D U R A N G O</string>
 
+    <!--    Zona 8-->
+
+    <string name="txtZona8_Titulo">ZORIONAK!!</string>
+    <string name="txtZona8_1_Txorimalo">Letra guztiak lortu dituzue! DURANGO!
+        Egin klik botoiari eta aterpetxean asteburu zoragarria pasatzeko giltza agertuko zaizue!</string>
+
 </resources>

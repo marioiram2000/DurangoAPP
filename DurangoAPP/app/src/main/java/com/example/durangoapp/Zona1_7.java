@@ -24,7 +24,7 @@ import java.util.TimerTask;
 
 public class Zona1_7 extends AppCompatActivity {
 
-
+    //Aqui estan las preguntas del cuestionario
     private Integer[] preguntas = new Integer[] {R.string.zona1_7_Pregunta1,
             R.string.zona1_7_Pregunta2,
             R.string.zona1_7_Pregunta3,
@@ -74,6 +74,7 @@ public class Zona1_7 extends AppCompatActivity {
         txorimalo = findViewById(R.id.zona1_7_txorimalo);
         FloatingActionButton btnVideo = (FloatingActionButton) findViewById(R.id.zona1_7_fbtnVideo);
 
+        //Aqui estan los botones y el audio de fallo
         FloatingActionButton btn= findViewById(R.id.zona1_7_fbtn);
         audioFallo= MediaPlayer.create(Zona1_7.this,R.raw.zona1_7_txorimalo_fallo);
             pregunta.setText(getString(preguntas[i]));
@@ -86,6 +87,7 @@ public class Zona1_7 extends AppCompatActivity {
                 c.setText(getString(respuestas_c[i]));
             }
 
+            //Boton para volver a ver el video
             btnVideo.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -96,7 +98,7 @@ public class Zona1_7 extends AppCompatActivity {
                 }
             });
 
-
+            //Boton para pasar de pregunta si aciertas
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -108,8 +110,10 @@ public class Zona1_7 extends AppCompatActivity {
                         }else{
                             Intent intent = new Intent(Zona1_7.this, Zona1_8.class);
                             startActivity(intent);
+                            finish();
                         }
                     }else{
+                        //Si fallas se reproduce el audio de fallo
                         audioFallo.start();
                         btn.setEnabled(false);
                         txorimalo.setVisibility(View.VISIBLE);

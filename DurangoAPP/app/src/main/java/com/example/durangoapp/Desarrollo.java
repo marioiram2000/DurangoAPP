@@ -169,13 +169,13 @@ public class Desarrollo extends AppCompatActivity {
 //        });
 
 
-//        Button btnZona8 = findViewById(R.id.btn_Zona8);
-//        btnZona8.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(Desarrollo.this, Zona8_1.class);
-//                startActivity(intent);
-//            }
-//        });
+        Button btnZona8 = findViewById(R.id.btn_Zona8);
+        btnZona8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Desarrollo.this, Zona8_1.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 etGroup.setError(null);
                 GRUPO = new GrupoDAO().insert(db, group);
                 dialogCrearGrupo.hide();
-                startZona0();
+                startMapa();
             }
         });
     }
@@ -107,9 +107,14 @@ public class MainActivity extends AppCompatActivity {
             GRUPO = (Grupo) spinnerGrupos.getSelectedItem();
             if(GRUPO!=null){
                 dialogElegirGrupo.hide();
-                startZona0();
+                startMapa();
             }
         });
+    }
+
+    private void startMapa(){
+        Intent intent = new Intent(MainActivity.this, MapaActivity.class);
+        startActivity(intent);
     }
 
     private void startZona0(){

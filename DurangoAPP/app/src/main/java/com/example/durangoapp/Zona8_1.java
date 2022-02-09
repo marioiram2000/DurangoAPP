@@ -9,6 +9,8 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -16,39 +18,49 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Zona1_8 extends AppCompatActivity {
+public class Zona8_1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_zona1_8);
+        setContentView(R.layout.activity_zona8_1);
 
         MediaPlayer audioCompletado;
-        TextView txtTxorimalo = findViewById(R.id.txtZona1_8_Txorimalo);
+        TextView txtTxorimalo = findViewById(R.id.txtZona8_1_Txorimalo);
 
-        audioCompletado = MediaPlayer.create(Zona1_8.this, R.raw.zona1_7_txorimalo_acierto);
+        audioCompletado = MediaPlayer.create(Zona8_1.this, R.raw.zona8_1_txorimalo);
         audioCompletado.start();
-        setText(getString(R.string.txtZona1_8_Txorimalo_1),txtTxorimalo , 65);
+        setText(getString(R.string.txtZona8_1_Txorimalo),txtTxorimalo , 65);
         audioCompletado.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
-                //finish();
+                finish();
                 //Aqui falta dar la letra
             }
         });
 
-        //Boton para volver al mapa
-        FloatingActionButton btn= findViewById(R.id.zona1_8_fbtn);
+        //Pulsando el boton se revela la llave del albergue
+        ImageView imgZona8_1_Llave = findViewById(R.id.imgZona8_1_Llave);
+        Button llave = findViewById(R.id.btnZona8_1_Llave);
+        llave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imgZona8_1_Llave.setVisibility(View.VISIBLE);
+            }
+        });
+
+        //Boton para salir
+        FloatingActionButton btn= findViewById(R.id.zona8_1_fbtn);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Zona1_8.this, MapaActivity.class);
+                Intent intent = new Intent(Zona8_1.this, MapaActivity.class);
                 startActivity(intent);
                 finish();
             }
         });
-    }
 
+    }
 
     //Se visualizar el texto palabra por palabra
     public void setText(final String s, TextView txt, int velocidad)
