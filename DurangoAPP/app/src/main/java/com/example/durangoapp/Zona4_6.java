@@ -9,6 +9,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -25,15 +26,18 @@ public class Zona4_6 extends AppCompatActivity {
 
         MediaPlayer audioCompletado;
         TextView txtTxorimalo = findViewById(R.id.txtZona4_6_Txorimalo);
+        ImageView imgZona4_6_TxorimaloLetraA = findViewById(R.id.imgZona4_6_TxorimaloLetraA);
+        TextView txtZona4_6_LetraA = findViewById(R.id.txtZona4_6_LetraA);
 
         audioCompletado = MediaPlayer.create(Zona4_6.this, R.raw.zona4_5_txorimalo_acierto);
         audioCompletado.start();
         setText(getString(R.string.txtZona4_6_Txorimalo_1),txtTxorimalo , 65);
+        //Al terminar te aparece la letra
         audioCompletado.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
-                //finish();
-                //Aqui falta dar la letra
+                imgZona4_6_TxorimaloLetraA.setVisibility(View.VISIBLE);
+                txtZona4_6_LetraA.setVisibility(View.VISIBLE);
             }
         });
 
