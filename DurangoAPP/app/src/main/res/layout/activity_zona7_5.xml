@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Zona7_5"
+    android:background="@color/papiro">
+
+    <TextView
+        android:id="@+id/txtZona7_5_Titulo"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txtZona7_5_Titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtZona7_5_frase1"
+        style="@style/normalTextSmall"
+        android:layout_width="358dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:text="@string/txtZona7_5_frase1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtZona7_5_Titulo" />
+
+    <EditText
+        android:id="@+id/txtZona7_5_hueco1"
+        style="@style/normalTextSmall"
+        android:layout_width="85dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/txtZona7_5_frase1"
+        app:layout_constraintTop_toBottomOf="@+id/txtZona7_5_Titulo" />
+
+    <TextView
+        android:id="@+id/txtZona7_5_frase2"
+        style="@style/normalTextSmall"
+        android:layout_width="358dp"
+        android:layout_height="41dp"
+        android:layout_margin="25dp"
+        android:text="@string/txtZona7_5_frase2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtZona7_5_frase1" />
+
+    <EditText
+        android:id="@+id/txtZona7_5_hueco2"
+        style="@style/normalTextSmall"
+        android:layout_width="118dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="@+id/txtZona7_5_frase2"
+        app:layout_constraintTop_toBottomOf="@+id/txtZona7_5_Titulo" />
+
+    <TextView
+        android:id="@+id/txtZona7_5_frase3"
+        style="@style/normalTextSmall"
+        android:layout_width="358dp"
+        android:layout_height="41dp"
+        android:layout_margin="25dp"
+        android:text="@string/txtZona7_5_frase3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtZona7_5_frase2" />
+
+    <EditText
+        android:id="@+id/txtZona7_5_hueco3"
+        style="@style/normalTextSmall"
+        android:layout_width="60dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintStart_toStartOf="@+id/txtZona7_5_frase3"
+        app:layout_constraintTop_toBottomOf="@+id/txtZona7_5_Titulo" />
+
+    <TextView
+        android:id="@+id/txtZona7_5_frase4"
+        style="@style/normalTextSmall"
+        android:layout_width="358dp"
+        android:layout_height="41dp"
+        android:layout_margin="25dp"
+        android:text="@string/txtZona7_5_frase4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtZona7_5_frase3" />
+
+    <EditText
+        android:id="@+id/txtZona7_5_hueco4"
+        style="@style/normalTextSmall"
+        android:layout_width="95dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="212dp"
+        app:layout_constraintStart_toStartOf="@+id/txtZona7_5_frase4"
+        app:layout_constraintTop_toBottomOf="@+id/txtZona7_5_Titulo" />
+
+    <TextView
+        android:id="@+id/txtZona7_5_frase5"
+        style="@style/normalTextSmall"
+        android:layout_width="358dp"
+        android:layout_height="61dp"
+        android:layout_margin="25dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="156dp"
+        android:text="@string/txtZona7_5_frase5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtZona7_5_frase4" />
+
+    <EditText
+        android:id="@+id/txtZona7_5_hueco5"
+        style="@style/normalTextSmall"
+        android:layout_width="92dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="276dp"
+        app:layout_constraintStart_toStartOf="@+id/txtZona7_5_frase5"
+        app:layout_constraintTop_toBottomOf="@+id/txtZona7_5_Titulo" />
+
+    <LinearLayout
+        android:id="@+id/zona7_5_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/txtZona7_5_frase5"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/txtZona7_5_palabra3"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/txtZona7_5_palabra3" />
+
+        <TextView
+            android:id="@+id/txtZona7_5_palabra1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/txtZona7_5_palabra1"
+            style="@style/normalText"
+            />
+
+        <TextView
+            android:id="@+id/txtZona7_5_palabra5"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txtZona7_5_palabra5" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/zona7_5_linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/zona7_5_linear1"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/txtZona7_5_palabra4"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txtZona7_5_palabra4" />
+        <TextView
+            android:id="@+id/txtZona7_5_palabra2"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txtZona7_5_palabra2" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnZona7_5_Corregir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnZona7_5_Corregir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zona7_5_linear2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
