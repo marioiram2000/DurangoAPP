@@ -36,41 +36,42 @@ public class MapaActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(MapboxMap mapboxMap) {
         mapboxMap.setCameraPosition(new CameraPosition.Builder()
-            .target(new LatLng(43.168698, -2.6329660))
-            .zoom(13)
-            .build());
+                .target(new LatLng(43.168698, -2.6329660))
+                .zoom(13)
+                .build());
 
         mapboxMap.addOnMapClickListener(new MapboxMap.OnMapClickListener() {
             @Override
             public void onMapClick(@NonNull LatLng point) {
                 PointF finalPoint = mapboxMap.getProjection().toScreenLocation(point);
                 List<Feature> features = mapboxMap.queryRenderedFeatures(finalPoint);
-                for(Feature feature: features){
+                for (Feature feature : features) {
                     String title = null;
-                    if(feature.getProperty("title")!=null){
-                        title=feature.getProperty("title").toString();
+                    if (feature.getProperty("title") != null) {
+                        title = feature.getProperty("title").toString();
                     }
 
-                    if(title!=null){
+                    if (title != null) {
                         Intent intent = null;
-                        if(title.contains("1")){
-                                intent = new Intent(MapaActivity.this, Zona1_1.class);
-                        }else if(title.contains("2")){
-                                 intent = new Intent(MapaActivity.this, Zona2_1.class);
-                        }else if(title.contains("3")) {
+                        if (title.contains("1")) {
+                            intent = new Intent(MapaActivity.this, Zona1_1.class);
+                        } else if (title.contains("2")) {
+                            intent = new Intent(MapaActivity.this, Zona2_1.class);
+                        } else if (title.contains("3")) {
                             intent = new Intent(MapaActivity.this, Zona3_1.class);
-                        }else if(title.contains("4")) {
+                        } else if (title.contains("4")) {
                             intent = new Intent(MapaActivity.this, Zona4_1.class);
-                        }else if(title.contains("5")) {
+                        } else if (title.contains("5")) {
                             intent = new Intent(MapaActivity.this, Zona5_1.class);
-                        }else if(title.contains("6")) {
+                        } else if (title.contains("6")) {
                             intent = new Intent(MapaActivity.this, Zona6_1.class);
-                        }else if(title.contains("7")){
-                                intent = new Intent(MapaActivity.this, Zona7_1.class);
+                        } else if (title.contains("7")) {
+                            intent = new Intent(MapaActivity.this, Zona7_1.class);
                         }
-                        if(intent!=null)startActivity(intent);
+                        if (intent != null) startActivity(intent);
                     }
-                };
+                }
+                ;
             }
         });
     }
