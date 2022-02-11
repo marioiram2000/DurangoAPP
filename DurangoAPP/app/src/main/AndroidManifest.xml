@@ -28,7 +28,7 @@
             android:name=".Zona7_5"
             android:exported="false" />
         <activity
-            android:name=".Zona3_5"
+            android:name=".Zona4_5"
             android:exported="true" />
         <activity
             android:name=".Zona7_6"

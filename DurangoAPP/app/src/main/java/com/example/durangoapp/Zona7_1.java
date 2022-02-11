@@ -3,6 +3,7 @@ package com.example.durangoapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -82,6 +83,13 @@ public class Zona7_1 extends AppCompatActivity {
             }
         });
 
+        btnZona7_5_Juego.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Zona7_1.this, Zona7_5.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

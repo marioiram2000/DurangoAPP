@@ -91,7 +91,7 @@ public class Desarrollo extends AppCompatActivity {
         irJuego3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Desarrollo.this, Zona3_5.class);
+                Intent intent = new Intent(Desarrollo.this, Zona4_5.class);
                 startActivity(intent);
             }
         });
