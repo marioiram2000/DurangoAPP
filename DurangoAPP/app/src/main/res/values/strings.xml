@@ -192,7 +192,6 @@
     <string name="btnZona7_5_Corregir">Zuzendu</string>
 
 
-
     <string name="btnZona7_4_Juego">O LETRA LORTU!</string>
     <string name="txtZona7_6_Titulo">ZORIONAK!</string>
     <string name="txtZona7_6_Txorimalo_1">Zorionak! O letra lortu duzue!</string>
@@ -203,5 +202,10 @@
     <string name="txtZona8_Titulo">ZORIONAK!!</string>
     <string name="txtZona8_1_Txorimalo">Letra guztiak lortu dituzue! DURANGO!
         Egin klik botoiari eta aterpetxean asteburu zoragarria pasatzeko giltza agertuko zaizue!</string>
+    <string name="santa_anako_arkua_kokatuta_dagoen_plaza">- SANTA ANAKO ARKUA KOKATUTA DAGOEN PLAZA</string>
+    <string name="santa_anako_arkua_kokatuta_gaur_egun">- SANTA ANAKO ARKUA KOKATUTA GAUR EGUN</string>
+    <string name="santa_anako_arkua_antzinean">- SANTA ANAKO ARKUA ANTZINEAN</string>
+    <string name="santa_anako_arkua_kokatuta_dagoen_hiria">- SANTA ANAKO ARKUA KOKATUTA DAGOEN HIRIA</string>
+    <string name="sartu_beheko_esaldiak_argazki_ondoan">Sartu beheko esaldiak argazki ondoan</string>
 
 </resources>
