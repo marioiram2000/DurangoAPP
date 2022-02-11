@@ -44,6 +44,7 @@
         android:layout_height="206dp"
         android:layout_marginStart="124dp"
         android:layout_marginTop="36dp"
+        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgZona3_6_Txorimalo"
         app:srcCompat="@drawable/letrar" />
@@ -55,6 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:text="@string/txtZona3_6_LetraR"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
