@@ -17,13 +17,16 @@ import java.util.List;
 
 import BBDD.DBHelper;
 import BBDD.dao.GrupoDAO;
+import BBDD.modelo.Actividad;
 import BBDD.modelo.Grupo;
 
 
 public class MainActivity extends AppCompatActivity {
 
     public static Grupo GRUPO;
+    public static Actividad ACTIVIDAD = null;
     private SQLiteDatabase db;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
