@@ -82,7 +82,6 @@
     <!--Juego Zona 2    -->
 
 
-
     <!--    Zona 3-->
     <string name="txtZona3_Titulo">Santa Anako arkua</string>
     <string name="txtZona3_1_Txorimalo">Kaixo! Ongi etorri hirugarren geralekura! Durangoko Santa Anako arkuan gaude. </string>
@@ -129,7 +128,7 @@
     <!--Juego Zona 4    -->
 
     <string name="txtZona4_5_Titulo">Gurutzegrama</string>
-    <string name="txtZona4_5_Pistas">-Zergatik berregituratu zen Durangoko Udala?\n-Udalaren elementu zoragarriena\n-Udalaren beheko solairuan\n-Udalaren lehen solairuan</string>
+    <string name="txtZona4_5_Pistas">-Zergatik berregituratu zen Udala?\n-Zein da udalaren elementu zoragarriena?\n-Zer dago udalaren beheko solairuan?\n-Zer dago udalaren lehen solairuan?</string>
 
 
     <!--    Zona 5-->
@@ -173,7 +172,6 @@
     <string name="txtZona6_6_LetraG">D U R A N G _</string>
 
     <!--Juego Zona 6    -->
-
 
 
     <!--    Zona 7-->
@@ -226,5 +224,12 @@
     <string name="hiria">- HIRIA</string>
     <string name="zuzendu">Zuzendu</string>
     <string name="santa_anako_arkua">SANTA ANAKO ARKUA:</string>
+    <string name="durangoko_euskal_liburu_eta_disko_azoka_euskararen_eta_euskarazko_kulturaren_erakustoki_erraldoi_eta_jai_nagusi_bihurtzen_da">Durangoko Euskal Liburu eta Disko Azoka euskararen eta euskarazko kulturaren erakustoki erraldoi eta jai nagusi bihurtzen da</string>
+    <string name="erantzun_egia_edo_gezurra">ERANTZUN EGIA EDO GEZURRA</string>
+    <string name="euskal_liburu_eta_disko_azoka_durangon_bi_urtean_behin_ospatzen_da">Euskal Liburu eta Disko Azoka, Durangon bi urtean behin ospatzen da.</string>
+    <string name="abenduaren_lehenengo_hamabostaldian_ospatzen_den_euskal_herriko_azokarik_handiena_eta_garrantzitsuena_da">Abenduaren lehenengo hamabostaldian, ospatzen den Euskal Herriko azokarik handiena eta garrantzitsuena da.</string>
+    <string name="_1995eko_azaroaren_1ean_lehen_edizioa_antolatu_zuten_durangon_andra_mariaren_basilikako_arkupean">1995eko azaroaren 1ean, lehen edizioa antolatu zuten Durangon, Andra Mariaren basilikako arkupean.</string>
+    <string name="euskal_herri_osoko_argitaletxeak_batzen_dira_azokan_han_bere_liburuak_eta_diskoak_beste_liburuen_eta_diskoen_truke_aldatzeko_asmoz">Euskal Herri osoko argitaletxeak batzen dira azokan, han bere liburuak eta diskoak beste liburuen eta diskoen truke aldatzeko asmoz.</string>
+    <string name="saltzen_diren_liburuak_eta_diskoak_azoka_egiten_den_urte_berean_argitaratutakoak_baino_ez_izan_ohi_dira">Saltzen diren liburuak eta diskoak azoka egiten den urte berean argitaratutakoak baino ez izan ohi dira.</string>
 
 </resources>

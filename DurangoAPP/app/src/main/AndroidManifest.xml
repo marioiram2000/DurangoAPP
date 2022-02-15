@@ -22,6 +22,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DurangoAPP">
         <activity
+            android:name=".Zona6_5"
+            android:exported="false" />
+        <activity
             android:name=".Zona3_5"
             android:exported="false"
             android:screenOrientation="portrait" />
@@ -32,7 +35,7 @@
         <activity
             android:name=".Zona8_1"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Zona7_5"
             android:exported="false"
