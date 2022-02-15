@@ -2,6 +2,8 @@ package com.example.durangoapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -43,17 +45,18 @@ public class Zona3_5 extends AppCompatActivity {
         String resp3 = ed3.getText().toString();
         String resp4 = ed4.getText().toString();
 
-        String resu1 = "SANTA ANAKO ARKUA KOKATUTA DAGOEN PLAZA";
-        String resu2 = "SANTA ANAKO ARKUA KOKATUTA GAUR EGUN";
-        String resu3 = "SANTA ANAKO ARKUA ANTZINEAN";
-        String resu4 = "SANTA ANAKO ARKUA KOKATUTA DAGOEN HIRIA";
-        if (!resp1.toLowerCase(Locale.ROOT).equals(resu1.trim().toLowerCase(Locale.ROOT))) {
+        String resu1 = "GAUR EGUN";
+        String resu2 = "HIRIA";
+        String resu3 = "ANTZINEAN";
+        String resu4 = "PLAZA";
+
+        if (!resu1.equals(resp1.trim().toUpperCase(Locale.ROOT))) {
             correcto = false;
-        }else if (!resp2.toLowerCase(Locale.ROOT).equals(resu2.trim().toLowerCase(Locale.ROOT))) {
+        }else if (!resu2.equals(resp2.trim().toUpperCase(Locale.ROOT))) {
             correcto = false;
-        }else if (!resp3.toLowerCase(Locale.ROOT).equals(resu3.trim().toLowerCase(Locale.ROOT))) {
+        }else if (!resu3.equals(resp3.trim().toUpperCase(Locale.ROOT))) {
             correcto = false;
-        }else if (!resp4.toLowerCase(Locale.ROOT).equals(resu4.trim().toLowerCase(Locale.ROOT))) {
+        }else if (!resu4.equals(resp4.trim().toUpperCase(Locale.ROOT))) {
             correcto = false;
         }
 
@@ -61,15 +64,21 @@ public class Zona3_5 extends AppCompatActivity {
             bien();
         }else{
             mal();
-            
+
         }
     }
 
     private void mal(){
-
+        MediaPlayer audioFallo = MediaPlayer.create(this, R.raw.zona1_7_txorimalo_fallo);
+        audioFallo.start();
+        ed1.setText("");
+        ed2.setText("");
+        ed3.setText("");
+        ed4.setText("");
     }
 
     private void bien(){
-
+        Intent intent = new Intent(this, Zona3_6.class);
+        startActivity(intent);
     }
 }

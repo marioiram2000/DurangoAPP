@@ -219,10 +219,12 @@
     <string name="txtZona8_Titulo">ZORIONAK!!</string>
     <string name="txtZona8_1_Txorimalo">Letra guztiak lortu dituzue! DURANGO!
         Egin klik botoiari eta aterpetxean asteburu zoragarria pasatzeko giltza agertuko zaizue!</string>
-    <string name="santa_anako_arkua_kokatuta_dagoen_plaza">- SANTA ANAKO ARKUA KOKATUTA DAGOEN PLAZA</string>
-    <string name="santa_anako_arkua_kokatuta_gaur_egun">- SANTA ANAKO ARKUA KOKATUTA GAUR EGUN</string>
-    <string name="santa_anako_arkua_antzinean">- SANTA ANAKO ARKUA ANTZINEAN</string>
-    <string name="santa_anako_arkua_kokatuta_dagoen_hiria">- SANTA ANAKO ARKUA KOKATUTA DAGOEN HIRIA</string>
     <string name="sartu_beheko_esaldiak_argazki_ondoan">Sartu beheko esaldiak argazki ondoan</string>
+    <string name="plaza">- PLAZA</string>
+    <string name="gaur_egun">- GAUR EGUN</string>
+    <string name="antzinean">- ANTZINEAN</string>
+    <string name="hiria">- HIRIA</string>
+    <string name="zuzendu">Zuzendu</string>
+    <string name="santa_anako_arkua">SANTA ANAKO ARKUA:</string>
 
 </resources>
