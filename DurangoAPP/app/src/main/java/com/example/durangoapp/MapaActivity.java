@@ -2,9 +2,16 @@ package com.example.durangoapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 
+import android.Manifest;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.PointF;
 import android.os.Bundle;
 
@@ -25,6 +32,7 @@ public class MapaActivity extends AppCompatActivity implements OnMapReadyCallbac
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mapa);
 
+        checkPermissions();
         Mapbox.getInstance(getApplicationContext(), getString(R.string.mapbox_access_token));
         MapView mapView = findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
@@ -74,6 +82,33 @@ public class MapaActivity extends AppCompatActivity implements OnMapReadyCallbac
                 ;
             }
         });
+    }
+
+    private void checkPermissions() {
+        boolean permisoEscritura = ContextCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED;
+        if (!permisoEscritura) {
+            solicitarPermiso(Manifest.permission.READ_PHONE_STATE, "Necesitamos los permisos para abrir el mapa", 0, this);
+        }
+    }
+
+    public static void solicitarPermiso(final String permiso, String justificacion, final int requestCode, final Activity actividad) {
+        if (ActivityCompat.shouldShowRequestPermissionRationale(actividad, permiso)) {
+            //Informamos al usuario para qué y por qué se necesitan los permisos
+            new AlertDialog.Builder(actividad)
+                    .setTitle("Solicitud de permiso")
+                    .setMessage(justificacion)
+                    .setPositiveButton("OK",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int whichButton) {
+                                    ActivityCompat.requestPermissions(actividad, new String[]{permiso}, requestCode);
+                                }
+                            })
+                    .show();
+        } else {
+            //Muestra el cuadro de dialogo para la solicitud de los permisos
+            // y registra el permiso según respuesta del usuario
+            ActivityCompat.requestPermissions(actividad, new String[]{permiso}, requestCode);
+        }
     }
 
     /*
