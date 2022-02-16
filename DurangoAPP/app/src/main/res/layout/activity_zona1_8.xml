@@ -40,27 +40,28 @@
 
     <ImageView
         android:id="@+id/imgZona1_8_TxorimaloLetraD"
-        android:layout_width="160dp"
-        android:layout_height="206dp"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="235dp"
+        android:layout_height="247dp"
         android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/txtZona1_8_LetraD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgZona1_8_Txorimalo"
-        app:srcCompat="@drawable/letrad" />
+        app:srcCompat="@drawable/txorimalo_letra" />
 
     <TextView
         android:id="@+id/txtZona1_8_LetraD"
         style="@style/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/txtZona1_8_LetraD"
         android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/zona1_8_fbtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgZona1_8_TxorimaloLetraD" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/zona1_8_fbtn"
@@ -72,12 +73,14 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/txtZona1_8_D"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
         android:text="D"
         android:textSize="48sp"
         android:textStyle="bold"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@+id/imgZona1_8_TxorimaloLetraD"
         app:layout_constraintTop_toTopOf="@+id/imgZona1_8_TxorimaloLetraD" />
 

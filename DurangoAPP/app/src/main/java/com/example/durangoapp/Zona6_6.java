@@ -28,6 +28,7 @@ public class Zona6_6 extends AppCompatActivity {
         TextView txtTxorimalo = findViewById(R.id.txtZona6_6_Txorimalo);
         ImageView imgZona6_6_TxorimaloLetraG = findViewById(R.id.imgZona6_6_TxorimaloLetraG);
         TextView txtZona6_6_LetraG = findViewById(R.id.txtZona6_6_LetraG);
+        TextView txtZona6_6_G = findViewById(R.id.txtZona6_6_G);
 
         audioCompletado = MediaPlayer.create(Zona6_6.this, R.raw.zona6_5_txorimalo_acierto);
         audioCompletado.start();
@@ -38,6 +39,7 @@ public class Zona6_6 extends AppCompatActivity {
             public void onCompletion(MediaPlayer mediaPlayer) {
                 imgZona6_6_TxorimaloLetraG.setVisibility(View.VISIBLE);
                 txtZona6_6_LetraG.setVisibility(View.VISIBLE);
+                txtZona6_6_G.setVisibility(View.VISIBLE);
             }
         });
 

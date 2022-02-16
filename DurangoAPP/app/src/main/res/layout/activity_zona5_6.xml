@@ -7,6 +7,17 @@
     tools:context=".Zona5_6"
     android:background="@color/papiro">
 
+    <ImageView
+        android:id="@+id/imgZona5_6_TxorimaloLetraN"
+        android:layout_width="235dp"
+        android:layout_height="247dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/txtZona5_6_LetraN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgZona5_6_Txorimalo"
+        app:srcCompat="@drawable/txorimalo_letra" />
+
     <TextView
         android:id="@+id/txtZona5_6_Titulo"
         style="@style/title"
@@ -38,29 +49,18 @@
         app:layout_constraintStart_toEndOf="@+id/imgZona5_6_Txorimalo"
         app:layout_constraintTop_toTopOf="@+id/imgZona5_6_Txorimalo" />
 
-    <ImageView
-        android:id="@+id/imgZona5_6_TxorimaloLetraN"
-        android:layout_width="160dp"
-        android:layout_height="206dp"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="36dp"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgZona5_6_Txorimalo"
-        app:srcCompat="@drawable/letran" />
-
     <TextView
         android:id="@+id/txtZona5_6_LetraN"
         style="@style/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/txtZona5_6_LetraN"
         android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/zona5_6_fbtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgZona5_6_TxorimaloLetraN" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/zona5_6_fbtn"
@@ -72,12 +72,14 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/txtZona5_6_N"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
         android:text="N"
         android:textSize="48sp"
         android:textStyle="bold"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@+id/imgZona5_6_TxorimaloLetraN"
         app:layout_constraintTop_toTopOf="@+id/imgZona5_6_TxorimaloLetraN" />
 
