@@ -71,4 +71,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgZona1_8_TxorimaloLetraD"
+        app:layout_constraintTop_toTopOf="@+id/imgZona1_8_TxorimaloLetraD" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
