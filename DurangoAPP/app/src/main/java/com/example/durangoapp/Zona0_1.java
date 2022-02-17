@@ -100,12 +100,18 @@ public class Zona0_1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 audio_txorimalo.stop();
-                Intent intent = new Intent(Zona0_1.this, Zona1_1.class);
-                startActivity(intent);
+                startMapa();
             }
         });
 
     }
+
+    private void startMapa(){
+        Intent intent = new Intent(Zona0_1.this, MapaActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
 
     //Parar el audio cuando se pulsa el boton back
     @Override

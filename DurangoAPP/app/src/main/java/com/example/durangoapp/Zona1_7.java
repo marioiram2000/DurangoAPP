@@ -135,11 +135,6 @@ public class Zona1_7 extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onBackPressed() {
-
-    }
-
     //Se visualizar el texto palabra por palabra
     public void setText(final String s, TextView txt, int velocidad)
     {
