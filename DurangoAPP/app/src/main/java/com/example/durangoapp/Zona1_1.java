@@ -28,6 +28,7 @@ public class Zona1_1 extends AppCompatActivity {
     private MediaPlayer audio_Txorimalo;
     private VideoView video;
 
+    //Las acciónes que queremos que se ejecuten cuando se inicia la actividad
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

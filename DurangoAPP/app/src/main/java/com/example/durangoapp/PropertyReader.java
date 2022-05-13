@@ -3,6 +3,7 @@ package com.example.durangoapp;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+//Clase para leer las propiedades del archivo de propiedades assets/mainProperties.properties
 public class PropertyReader {
 
     private static final Properties props = new Properties();
@@ -16,6 +17,8 @@ public class PropertyReader {
         }
     }
 
+    
+    //Función que recive la clave de una propiedad y devuelve su valor
     public static String getProperty(String clave) {
         String valor = props.getProperty(clave);
         if (valor != null) {

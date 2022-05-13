@@ -27,6 +27,7 @@ import java.util.List;
 
 public class MapaActivity extends AppCompatActivity implements OnMapReadyCallback {
 
+    //Las acciónes que queremos que se ejecuten cuando se inicia la actividad
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +42,7 @@ public class MapaActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     }
 
+    //Función que se ejecuta cuando se carga el mapa
     @Override
     public void onMapReady(MapboxMap mapboxMap) {
         mapboxMap.setCameraPosition(new CameraPosition.Builder()
@@ -84,6 +86,7 @@ public class MapaActivity extends AppCompatActivity implements OnMapReadyCallbac
         });
     }
 
+    //Función que comprueba si tenemos los permisos necesarios
     private void checkPermissions() {
         boolean permisoEscritura = ContextCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED;
         if (!permisoEscritura) {
@@ -91,6 +94,7 @@ public class MapaActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
     }
 
+    //Función que pide los permisos que necesitamos
     public static void solicitarPermiso(final String permiso, String justificacion, final int requestCode, final Activity actividad) {
         if (ActivityCompat.shouldShowRequestPermissionRationale(actividad, permiso)) {
             //Informamos al usuario para qué y por qué se necesitan los permisos

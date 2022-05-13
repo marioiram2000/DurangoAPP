@@ -19,6 +19,7 @@ public class DrawView extends View {
         // TODO Auto-generated constructor stub
     }
 
+    //Función que dibuja la vista
     public DrawView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
@@ -29,6 +30,7 @@ public class DrawView extends View {
         paint.setStrokeJoin(Paint.Join.ROUND);
     }
 
+    //Función que se ejecuta cuando la vista se dibuja
     @Override
     protected void onDraw(Canvas canvas) {
         for (Line l : lines) {
@@ -36,6 +38,7 @@ public class DrawView extends View {
         }
     }
 
+    //Función que e ejecuta cuando se clica en el mapa
     @Override
     public boolean onTouchEvent(MotionEvent event) {
 

@@ -19,6 +19,7 @@ public class Zona3_5 extends AppCompatActivity {
     private EditText ed4;
     boolean correcto;
 
+    //Las acciónes que queremos que se ejecuten cuando se inicia la actividad
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,18 +39,23 @@ public class Zona3_5 extends AppCompatActivity {
         });
     }
 
+    //Comprobamos los resultados
     private void corregir(View view) {
         correcto = true;
+
+        //Respuestas del usuario
         String resp1 = ed1.getText().toString();
         String resp2 = ed2.getText().toString();
         String resp3 = ed3.getText().toString();
         String resp4 = ed4.getText().toString();
 
+        //Respuestas correctas
         String resu1 = "GAUR EGUN";
         String resu2 = "HIRIA";
         String resu3 = "ANTZINEAN";
         String resu4 = "PLAZA";
 
+        //Comprovación de respuestas
         if (!resu1.equals(resp1.trim().toUpperCase(Locale.ROOT))) {
             correcto = false;
         }else if (!resu2.equals(resp2.trim().toUpperCase(Locale.ROOT))) {
@@ -68,6 +74,7 @@ public class Zona3_5 extends AppCompatActivity {
         }
     }
 
+    //Si está mal, reproducimos el audio de fallo y limpiamos los resultados
     private void mal(){
         MediaPlayer audioFallo = MediaPlayer.create(this, R.raw.zona1_7_txorimalo_fallo);
         audioFallo.start();
@@ -77,6 +84,7 @@ public class Zona3_5 extends AppCompatActivity {
         ed4.setText("");
     }
 
+    //Si está bien, pasamos a la siguiente actividad
     private void bien(){
         Intent intent = new Intent(this, Zona3_6.class);
         startActivity(intent);

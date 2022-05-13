@@ -24,6 +24,7 @@ public class Zona4_1 extends AppCompatActivity {
     private Button btnZona4_5_Juego;
     private MediaPlayer audio_Txorimalo;
 
+    //Las acciónes que queremos que se ejecuten cuando se inicia la actividad
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

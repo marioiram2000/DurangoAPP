@@ -20,6 +20,7 @@ public class Zona4_5 extends AppCompatActivity {
     private boolean l3 = false;
     private boolean l4 = false;
 
+    //Las acciónes que queremos que se ejecuten cuando se inicia la actividad
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,15 +35,18 @@ public class Zona4_5 extends AppCompatActivity {
         });
     }
 
+    //Comprobamos los resultados
     public void corregir(View view) {
         EditText ed = findViewById(R.id.editTextZona4_5_resul);
         String resul = ed.getText().toString();
 
+        //Respuestas
         String r1 = "FATXADA";
         String r2 = "ARKUA";
         String r3 = "BALKOIA";
         String r4 = "BONBARDAKETA";
 
+        //Si la palabra introducida por el usuario es una de las respuestas, mostramos la palabra en el crucigrama
         if (resul.trim().toUpperCase(Locale.ROOT).equals(r1)) {
             findViewById(R.id.txtZona3_5_Box_23).setVisibility(View.VISIBLE);
             findViewById(R.id.txtZona3_5_Box_24).setVisibility(View.VISIBLE);

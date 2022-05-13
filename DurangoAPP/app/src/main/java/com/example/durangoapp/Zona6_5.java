@@ -11,6 +11,7 @@ import android.widget.Switch;
 
 public class Zona6_5 extends AppCompatActivity {
 
+    //Las acciónes que queremos que se ejecuten cuando se inicia la actividad
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

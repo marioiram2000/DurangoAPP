@@ -19,6 +19,7 @@ import java.util.TimerTask;
 
 public class Zona1_8 extends AppCompatActivity {
 
+    //Las acciónes que queremos que se ejecuten cuando se inicia la actividad
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +34,7 @@ public class Zona1_8 extends AppCompatActivity {
         audioCompletado = MediaPlayer.create(Zona1_8.this, R.raw.zona1_7_txorimalo_acierto);
         audioCompletado.start();
         setText(getString(R.string.txtZona1_8_Txorimalo_1),txtTxorimalo , 65);
+        
         //Al terminar te aparece la letra
         audioCompletado.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override

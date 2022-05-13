@@ -28,6 +28,7 @@ public class Zona0_1 extends AppCompatActivity {
     private FloatingActionButton btnZona0_1_Skip;
     private MediaPlayer audio_narrador, audio_txorimalo;
 
+    //Las acciónes que queremos que se ejecuten cuando se inicia la actividad
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -105,7 +106,8 @@ public class Zona0_1 extends AppCompatActivity {
         });
 
     }
-
+    
+    //Función que abre el mapa
     private void startMapa(){
         Intent intent = new Intent(Zona0_1.this, MapaActivity.class);
         startActivity(intent);

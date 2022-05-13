@@ -20,6 +20,7 @@ import java.util.TimerTask;
 
 public class Zona8_1 extends AppCompatActivity {
 
+    //Las acciónes que queremos que se ejecuten cuando se inicia la actividad
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -20,18 +20,19 @@ import BBDD.dao.GrupoDAO;
 import BBDD.modelo.Actividad;
 import BBDD.modelo.Grupo;
 
-
+//Actividad principal
 public class MainActivity extends AppCompatActivity {
 
     public static Grupo GRUPO;
     public static Actividad ACTIVIDAD = null;
     private SQLiteDatabase db;
 
-
+    //Las acciónes que queremos que se ejecuten cuando se inicia la actividad
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //Abrimos la base de datos
         DBHelper dbh = new DBHelper(this, "durangoDB", null, 1);
         db = dbh.getWritableDatabase();
 
@@ -55,8 +56,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-
     public void newGame(View view) {
         crearGrupo();
     }
@@ -65,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         elegirGrupo();
     }
 
+    //Función que crea un nuevo grupo y lo añade a la base de datos
     private void crearGrupo() {
         Dialog dialogCrearGrupo = new Dialog(this);
         dialogCrearGrupo.setContentView(R.layout.dialog_crear_grupo);
@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //Función que abre un desplegable con los grupos de la base de datos para que podamos continuar con un grupo
     private void elegirGrupo() {
         Dialog dialogElegirGrupo = new Dialog(this);
         dialogElegirGrupo.setContentView(R.layout.dialog_elegir_grupo);
@@ -115,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //Función para iniciar la actividad de la zona 0
     private void startZona0(){
         Intent intent = new Intent(MainActivity.this, Zona0_1.class);
         startActivity(intent);

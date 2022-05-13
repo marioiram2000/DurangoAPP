@@ -13,6 +13,7 @@ public class Zona1_4_video extends AppCompatActivity {
 
     VideoView video;
 
+    //Las acciónes que queremos que se ejecuten cuando se inicia la actividad
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

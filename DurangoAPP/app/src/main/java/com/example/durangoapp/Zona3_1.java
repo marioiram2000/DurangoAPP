@@ -25,6 +25,7 @@ public class Zona3_1 extends AppCompatActivity {
     private Button btnZona3_5_Juego;
     private TextView txtZona3_1_Txorimalo;
 
+    //Las acciónes que queremos que se ejecuten cuando se inicia la actividad
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
